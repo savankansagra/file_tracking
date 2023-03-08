@@ -13,3 +13,6 @@ spring:
                     lob:
                         non_contextual_creation: true
         show-sql: true
+    servlet:
+        multipart:
+            max-file-size: 2MB
