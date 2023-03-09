@@ -11,8 +11,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.royal.filetracking.tryTwo.helper.ExcelHelper;
+import com.royal.filetracking.tryTwo.helper.GDRSNewRegistrationHelper;
+import com.royal.filetracking.tryTwo.helper.GDRSPendingSupplierHelper;
 import com.royal.filetracking.tryTwo.model.GDRSNewRegistation;
+import com.royal.filetracking.tryTwo.model.GDRSPendingSupplier;
 import com.royal.filetracking.tryTwo.repository.GDRSNewRegistrationRepository;
+import com.royal.filetracking.tryTwo.repository.GDRSPendingSupplierRepository;
 
 @Service
 public class ExcelGDRSService {
@@ -20,8 +24,14 @@ public class ExcelGDRSService {
 	@Autowired
 	GDRSNewRegistrationRepository gdrsNewRegistrationRepository;
 	
+	@Autowired
+	GDRSPendingSupplierRepository gdrsPendingSupplierRepository;
+	
 	public final Logger logger = LoggerFactory.getLogger(ExcelGDRSService.class);
 	
+	/************************************************************************
+	 * GDRS New Registration 
+	 */
 	/**
 	 * Check file format and convert excel file to DB Object and save.
 	 * 
@@ -33,9 +43,9 @@ public class ExcelGDRSService {
 		String message = "";
 		if(ExcelHelper.hasExcelFormat(file)) {
 			try {
-				// TODO Save file
+				// Save file
 				this.saveGDRSNewRegistrationToDB(file);
-				message = "file uploaded succesfully.";
+				message = "GDRS New Registration excel file uploaded succesfully.";
 				return ResponseEntity.status(HttpStatus.CREATED).body(message);
 			} catch (Exception e) {
 				message = "Could not upload the file.";
@@ -55,10 +65,52 @@ public class ExcelGDRSService {
 	 */
 	private void saveGDRSNewRegistrationToDB(MultipartFile file) {
 		try {
-			List<GDRSNewRegistation> gdrsNewRegistrations = ExcelHelper.excelToGDRSNewRegistration(file.getInputStream());
+			List<GDRSNewRegistation> gdrsNewRegistrations = GDRSNewRegistrationHelper.excelToGDRSNewRegistration(file.getInputStream());
 			gdrsNewRegistrationRepository.saveAll(gdrsNewRegistrations);
 		} catch (Exception e) {
 			logger.error("Error while converting GDRS New Registration excel file to database object.");
+			logger.error(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+
+	
+	
+	/*********************************************************************
+	 *  GDRS Pending Supplier
+	 * 
+	 */
+	/**
+	 * GDRS Pending supplier file upload.
+	 * 
+	 * @param pendingSupplierFile
+	 * @return
+	 */
+	public ResponseEntity<String> saveGDRSPendingSupplier(MultipartFile pendingSupplierFile) {
+		String message = "";
+		if(ExcelHelper.hasExcelFormat(pendingSupplierFile)) {
+			try {
+				// Save file
+				this.saveGDRSPendingSupplierToDb(pendingSupplierFile);
+				message = "GDRS Pending supplier excel file uploaded succesfully.";
+				return ResponseEntity.status(HttpStatus.CREATED).body(message);
+			} catch(Exception e) {
+				message = "Could not upload the file.";
+				return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(message);
+			}
+		}
+		
+		// if file format is not excel.
+		message = "please upload an excel file !";
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(message);
+	}
+
+	private void saveGDRSPendingSupplierToDb(MultipartFile pendingSupplierFile) {
+		try {
+			List<GDRSPendingSupplier> gdrsPendingSuppliers = GDRSPendingSupplierHelper.excelToGDRSPendingSupplier(pendingSupplierFile.getInputStream());
+			gdrsPendingSupplierRepository.saveAll(gdrsPendingSuppliers);
+		}  catch (Exception e) {
+			logger.error("Error while converting GDRS Pending supplier excel file to database object.");
 			logger.error(e.getMessage());
 			e.printStackTrace();
 		}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Royal Irritech GGRC File Upload</title>
+</head>
+
+<body>
+    <h1>Royal Irritech GGRC File Upload</h1>
+    <div>
+        <div>
+            <form id="gdrs-new-registration">
+                <div>
+                    <span><b>GDRS New registration excel :</b></span>
+                    <input type="file" id="file-gdrs-new-registration">
+                    <button type="submit" id="submit-gdrs-new-registration">Upload</button>
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <form id="gdrs-pending-supplier">
+                <div>
+                    <span><b>GDRS Pending Supplier excel:</b></span>
+                    <input type="file" id="file-gdrs-pending-supplier">
+                    <button type="submit" id="submit-gdrs-pending-supplier">Upload</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        // *****************************************
+        // GDRS New Registration file upload.
+        const formGdrsNewRegistartion = document.querySelector('#gdrs-new-registration');
+        const fileGdrsNewRegistration = document.querySelector('#file-gdrs-new-registration');
+        const submitBtnGdrsNewRegistration = document.querySelector('#submit-gdrs-new-registration');
+
+        formGdrsNewRegistartion.addEventListener('submit', e => {
+            e.preventDefault();
+
+            const file = fileGdrsNewRegistration.files[0];
+            if (!file) {
+                alert('Please select a file');
+                return;
+            }
+
+            const formdata = new FormData();
+            formdata.append("file", file);
+
+            var requestOptions = {
+                method: 'POST',
+                body: formdata,
+                redirect: 'follow'
+            };
+
+            fetch("http://localhost:8080/api/excel/v2/gdrs/new registration/upload", requestOptions)
+                .then(response => response.text())
+                .then(result => console.log(result))
+                .catch(error => console.log('error', error));
+        });
+
+
+        // *****************************************
+        // GDRS Pending Supplier file upload.
+        const formGdrsPendingSupplier = document.querySelector('#gdrs-pending-supplier');
+        const fileGdrsPendingSupplier = document.querySelector('#file-gdrs-pending-supplier');
+        const submitBtnGdrsPendingSupplier = document.querySelector('#submit-gdrs-pending-supplier');
+
+        formGdrsPendingSupplier.addEventListener('submit', e => {
+            e.preventDefault();
+
+            const file = fileGdrsPendingSupplier.files[0];
+            if (!file) {
+                alert('Please select a file');
+                return;
+            }
+
+            const formdata = new FormData();
+            formdata.append("file", file);
+
+            var requestOptions = {
+                method: 'POST',
+                body: formdata,
+                redirect: 'follow'
+            };
+
+            fetch("http://localhost:8080/api/excel/v2/gdrs/pendingsupplier/upload", requestOptions)
+                .then(response => response.text())
+                .then(result => console.log(result))
+                .catch(error => console.log('error', error));
+        });
+
+
+    </script>
+</body>
+
+</html>
