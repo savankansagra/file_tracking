@@ -115,6 +115,24 @@ public class ExcelGDRSService {
 			e.printStackTrace();
 		}
 	}
+
+	public ResponseEntity<List<GDRSNewRegistation>> getAllGDRSRegistration() {
+		List<GDRSNewRegistation> listGDRSNewRegistration = gdrsNewRegistrationRepository.findAll();
+		if(listGDRSNewRegistration.isEmpty()) {
+			return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
+		} else {
+			return ResponseEntity.status(HttpStatus.OK).body(listGDRSNewRegistration);
+		}
+	}
+
+	public ResponseEntity<List<GDRSPendingSupplier>> getAllGDRSPendingSupplier() {
+		List<GDRSPendingSupplier> listGDRSPendingSupplier = gdrsPendingSupplierRepository.findAll();
+		if(listGDRSPendingSupplier.isEmpty()) {
+			return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
+		} else {
+			return ResponseEntity.status(HttpStatus.OK).body(listGDRSPendingSupplier);
+		}
+	}
 	
 	
 

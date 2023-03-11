@@ -1,5 +1,7 @@
 package com.royal.filetracking.tryTwo.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -11,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.royal.filetracking.tryTwo.model.GDRSNewRegistation;
+import com.royal.filetracking.tryTwo.model.GDRSPendingSupplier;
 import com.royal.filetracking.tryTwo.service.ExcelGDRSService;
 
 
@@ -34,6 +38,11 @@ public class ExcelGDRSController {
 		return excelGDRSService.saveGDRSNewRegistration(file);
 	}
 	
+	@GetMapping("/new registration")
+	public ResponseEntity<List<GDRSNewRegistation>> getAllGSRSNewRegistration(){
+		return excelGDRSService.getAllGDRSRegistration();
+	}
+	
 	
 	/**
 	 * GDRS Pending Supplier file upload.
@@ -46,7 +55,17 @@ public class ExcelGDRSController {
 		return excelGDRSService.saveGDRSPendingSupplier(pendingSupplierFile);
 	}
 	
+	@GetMapping("/pendingsupplier")
+	public ResponseEntity<List<GDRSPendingSupplier>> getAllGDRSPendingSupplier(){
+		return excelGDRSService.getAllGDRSPendingSupplier();
+	}
 	
+	/**
+	 * It shows the default file upload page.
+	 * 
+	 * @param model
+	 * @return
+	 */
 	@GetMapping("/")
 	public String getHtmlPage(Model model) {
 		return "gdrs";
