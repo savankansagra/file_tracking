@@ -1,3 +1,13 @@
 
 *** For creating localhost tunnel.
 $ ngrok http 8080
+
+
+***************************
+Reference to see
+See structure of rest api points.
+https://github.com/ivangfr/springboot-react-keycloak
+
+******************
+Springboot architecture example.
+https://github.com/elenamountz/spring-boot-rest-api-warehouse/blob/master/src/main/java/app/service/ProductService.java

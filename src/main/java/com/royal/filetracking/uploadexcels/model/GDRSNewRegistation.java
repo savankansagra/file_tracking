@@ -1,7 +1,8 @@
-package com.royal.filetracking.tryTwo.model;
+package com.royal.filetracking.uploadexcels.model;
 
 
 import java.util.Date;
+
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
