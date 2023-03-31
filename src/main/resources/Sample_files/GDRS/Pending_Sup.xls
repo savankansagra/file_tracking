@@ -1,0 +1,19 @@
+<div>
+	<table cellspacing="0" rules="all" border="1">
+		<tr>
+			<th scope="col">Reg. No.</th><th scope="col">Reg. Date.</th><th scope="col">Appl. Date.</th><th scope="col">Farmer Name</th><th scope="col">Supplier</th><th scope="col">MIS System</th><th scope="col">Loanee / Non Loanee</th><th scope="col">Area (Hac)</th><th scope="col">back</th><th scope="col">Lastscan</th><th scope="col">InwardDt</th>
+		</tr><tr>
+			<td>2223-AMR-2789</td><td>&nbsp;</td><td>10/11/2022</td><td>POKAL DHARMESHBHAI ARVINDBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>1.340</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-2593</td><td>&nbsp;</td><td>25/03/2023</td><td>PATEL ALPESHKUMAR AMBALAL</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>1.150</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-2592</td><td>&nbsp;</td><td>25/03/2023</td><td>PATEL PARESHKUMAR AMBALAL</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>1.140</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-2357</td><td>&nbsp;</td><td>31/01/2023</td><td>BAROT KETANKUMAR RAMESHBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>1.740</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-2360</td><td>&nbsp;</td><td>31/01/2023</td><td>PATEL MANJULABEN JAYNTIBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>0.900</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-2358</td><td>&nbsp;</td><td>31/01/2023</td><td>PATEL MANJULABEN JAYENTIBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>1.400</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div>

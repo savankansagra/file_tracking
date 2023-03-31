@@ -1,0 +1,75 @@
+<div>
+	<table cellspacing="0" rules="all" border="1">
+		<tr>
+			<th scope="col">Reg. No.</th><th scope="col">Reg. Date.</th><th scope="col">Appl. Date.</th><th scope="col">Farmer Name</th><th scope="col">Supplier</th><th scope="col">MIS System</th><th scope="col">Loanee / Non Loanee</th><th scope="col">Area (Hac)</th><th scope="col">back</th><th scope="col">Lastscan</th><th scope="col">InwardDt</th>
+		</tr><tr>
+			<td>2223-AND-413</td><td>&nbsp;</td><td>07/03/2023</td><td>PATEL RAKESHBHAI KANTIBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.430</td><td>&nbsp;</td><td>&nbsp;</td><td>13/03/2023</td>
+		</tr><tr>
+			<td>2223-BK-25247</td><td>&nbsp;</td><td>07/03/2023</td><td>MUKESHBHAI DEVDANBHAI KANBI (PATEL)</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.370</td><td>&nbsp;</td><td>&nbsp;</td><td>16/03/2023</td>
+		</tr><tr>
+			<td>2223-BK-25246</td><td>&nbsp;</td><td>07/03/2023</td><td>KUMBHAR BHAVESHBHAI KANJIBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.420</td><td>&nbsp;</td><td>&nbsp;</td><td>16/03/2023</td>
+		</tr><tr>
+			<td>2223-BK-25245</td><td>&nbsp;</td><td>07/03/2023</td><td>KUMBHAR BABUBHAI GANGABHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>1.610</td><td>&nbsp;</td><td>&nbsp;</td><td>13/03/2023</td>
+		</tr><tr>
+			<td>2223-MS-317</td><td>&nbsp;</td><td>10/03/2023</td><td>ASHOKBHAI ARJANBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>0.280</td><td>&nbsp;</td><td>&nbsp;</td><td>13/03/2023</td>
+		</tr><tr>
+			<td>2223-SK-5366</td><td>&nbsp;</td><td>11/03/2023</td><td>GOSWAMI ASHOKGIRI DEVGIRI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>0.820</td><td>&nbsp;</td><td>&nbsp;</td><td>13/03/2023</td>
+		</tr><tr>
+			<td>2223-BK-26250</td><td>&nbsp;</td><td>20/03/2023</td><td>KUMBHAR RAGABHAI GENABHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>1.240</td><td>&nbsp;</td><td>&nbsp;</td><td>22/03/2023</td>
+		</tr><tr>
+			<td>2223-BK-26253</td><td>&nbsp;</td><td>20/03/2023</td><td>KUMBHAR LADHABHAI MAVABHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>1.180</td><td>&nbsp;</td><td>&nbsp;</td><td>22/03/2023</td>
+		</tr><tr>
+			<td>2223-BK-26252</td><td>&nbsp;</td><td>20/03/2023</td><td>KUMBHAR LADHABHAI MAVABHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.230</td><td>&nbsp;</td><td>&nbsp;</td><td>22/03/2023</td>
+		</tr><tr>
+			<td>2223-BK-26251</td><td>&nbsp;</td><td>20/03/2023</td><td>KUMBHAR RAGABHAI GENABHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>1.020</td><td>&nbsp;</td><td>&nbsp;</td><td>22/03/2023</td>
+		</tr><tr>
+			<td>2223-SK-5499</td><td>&nbsp;</td><td>20/03/2023</td><td>PATEL DINESHBHAI KISHORBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>0.900</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SRT-1133</td><td>&nbsp;</td><td>20/03/2023</td><td>BHARATBHAI MOHANBHAI MORADIYA</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>3.060</td><td>&nbsp;</td><td>&nbsp;</td><td>20/03/2023</td>
+		</tr><tr>
+			<td>2223-AMR-3692</td><td>&nbsp;</td><td>28/02/2023</td><td>BHALALA JAVERBHAI RAGHAVBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>1.210</td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-AMR-3693</td><td>&nbsp;</td><td>28/02/2023</td><td>BHALALA BAVCHANDBHAI RAGHAVBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>2.100</td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-24184</td><td>&nbsp;</td><td>25/02/2023</td><td>KOLI RAMESHBHAI MEVABHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.450</td><td>&nbsp;</td><td>&nbsp;</td><td>06/03/2023</td>
+		</tr><tr>
+			<td>2223-RJT-4361</td><td>&nbsp;</td><td>22/02/2023</td><td>SHREEMAN JASMATBHAI VALLABHBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>1.350</td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-AMR-4026</td><td>&nbsp;</td><td>22/03/2023</td><td>CHHAGANBHAI KHIMJIBHAI GAJERA</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>0.810</td><td>&nbsp;</td><td>&nbsp;</td><td>23/03/2023</td>
+		</tr><tr>
+			<td>2223-AMR-4029</td><td>&nbsp;</td><td>22/03/2023</td><td>RAMESHBHAI NARANBHAI VEKARIYA</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>1.140</td><td>&nbsp;</td><td>&nbsp;</td><td>27/03/2023</td>
+		</tr><tr>
+			<td>2223-AMR-4028</td><td>&nbsp;</td><td>22/03/2023</td><td>JAGDISHBHAI NARANBHAI VEKARIYA</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>1.180</td><td>&nbsp;</td><td>&nbsp;</td><td>27/03/2023</td>
+		</tr><tr>
+			<td>2223-BK-19224</td><td>&nbsp;</td><td>18/01/2023</td><td>RATHOD MASRABHAI SAVABHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>1.130</td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-26374</td><td>&nbsp;</td><td>21/03/2023</td><td>MALI CHIRAGBHAI BABUBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>1.130</td><td>&nbsp;</td><td>&nbsp;</td><td>22/03/2023</td>
+		</tr><tr>
+			<td>2223-KH-1308</td><td>&nbsp;</td><td>24/03/2023</td><td>BHIKHABHAI KHODABHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>1.530</td><td>&nbsp;</td><td>&nbsp;</td><td>27/03/2023</td>
+		</tr><tr>
+			<td>2223-ARV-2574</td><td>&nbsp;</td><td>23/03/2023</td><td>PATEL BHANJIBHAI DEVSHIBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>1.900</td><td>&nbsp;</td><td>&nbsp;</td><td>27/03/2023</td>
+		</tr><tr>
+			<td>2223-ARV-2553</td><td>&nbsp;</td><td>16/03/2023</td><td>PATEL NISHUKUMAR ARVINDBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>1.390</td><td>&nbsp;</td><td>&nbsp;</td><td>27/03/2023</td>
+		</tr><tr>
+			<td>2223-AND-430</td><td>&nbsp;</td><td>28/03/2023</td><td>NARENDRASINH PRABHATSANG RATHOD</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>0.760</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-22626</td><td>&nbsp;</td><td>13/02/2023</td><td>KANBI MASUNGBHAI RAMJIBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.470</td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-22641</td><td>&nbsp;</td><td>13/02/2023</td><td>KOLI NAGJIBHAI MAGANJI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.450</td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-22624</td><td>&nbsp;</td><td>13/02/2023</td><td>KOLI MATHURABHAI MEVABHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.360</td><td>&nbsp;</td><td>&nbsp;</td><td>06/03/2023</td>
+		</tr><tr>
+			<td>2223-KH-1319</td><td>&nbsp;</td><td>27/03/2023</td><td>MANHARBHAI VAKHATSINH PARMAR</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>0.690</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-1881</td><td>&nbsp;</td><td>10/12/2022</td><td>PATEL BHANJIBHAI DEVSHIBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>1.900</td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-2359</td><td>&nbsp;</td><td>31/01/2023</td><td>VIRAMBHAI MELABHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>1.200</td><td>&nbsp;</td><td>&nbsp;</td><td>22/03/2023</td>
+		</tr><tr>
+			<td>2223-KH-1276</td><td>&nbsp;</td><td>17/03/2023</td><td>PARMAR JAYNTIBHAI DESAIBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>0.430</td><td>&nbsp;</td><td>&nbsp;</td><td>20/03/2023</td>
+		</tr><tr>
+			<td>2223-KH-1277</td><td>&nbsp;</td><td>17/03/2023</td><td>BHAGVANSINH DIPSINH SODHAPARMAR</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>0.920</td><td>&nbsp;</td><td>&nbsp;</td><td>20/03/2023</td>
+		</tr><tr>
+			<td>2223-MSN-3962</td><td>&nbsp;</td><td>17/03/2023</td><td>PRAJAPATI PINKIBEN LAVJIBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.370</td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div>
