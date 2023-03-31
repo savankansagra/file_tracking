@@ -12,12 +12,15 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.royal.filetracking.uploadexcels.helper.ExcelHelper;
+import com.royal.filetracking.uploadexcels.helper.GDRSCandDHelper;
 import com.royal.filetracking.uploadexcels.helper.GDRSNewRegistrationHelper;
 import com.royal.filetracking.uploadexcels.helper.GDRSPendingRegistrationHelper;
 import com.royal.filetracking.uploadexcels.helper.GDRSPendingSupplierHelper;
+import com.royal.filetracking.uploadexcels.model.GDRSCandD;
 import com.royal.filetracking.uploadexcels.model.GDRSNewRegistation;
 import com.royal.filetracking.uploadexcels.model.GDRSPendingRegistration;
 import com.royal.filetracking.uploadexcels.model.GDRSPendingSupplier;
+import com.royal.filetracking.uploadexcels.repository.GDRSCandDRespository;
 import com.royal.filetracking.uploadexcels.repository.GDRSNewRegistrationRepository;
 import com.royal.filetracking.uploadexcels.repository.GDRSPendingRegistrationRepository;
 import com.royal.filetracking.uploadexcels.repository.GDRSPendingSupplierRepository;
@@ -36,6 +39,10 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 	@Autowired
 	GDRSPendingRegistrationRepository gdrsPendingRegistrationRepository;
 		
+	@Autowired
+	GDRSCandDRespository gdrsCandDRespository;
+	
+	
 	public final Logger logger = LoggerFactory.getLogger(ExcelGDRSServiceImpl.class);
 	
 
@@ -201,6 +208,61 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 
 	private List<GDRSPendingRegistration> GDRSPendingRegistrationToList(MultipartFile file) throws IOException {
 		return GDRSPendingRegistrationHelper.excelToGDRSPendingRegistration(file.getInputStream());
+	}
+
+	
+	/**
+	 * C and D
+	 * convert C and D excel file to DB object and save.
+	 * 
+	 * @param file
+	 * @return
+	 */
+	@Override
+	public ResponseEntity<String> saveGDRSCandD(MultipartFile file) {
+		String message = "";
+		logger.info("Saving GDRS C and D file.");
+		if(ExcelHelper.hasExcelFormat(file)) {
+			try {
+				// Get List of object from the file.
+				List<GDRSCandD> candDList = this.GDRSCandDToList(file);
+				if(candDList.isEmpty()) {
+					message = "Error while parsing the C and D excel file";
+					logger.info(message);
+					return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(message);
+				}
+				
+				// Save list to database.
+				List<GDRSCandD> savedCandD = this.savedGDRSCandDToDB(candDList);
+				if(savedCandD.isEmpty()) {
+					message = "Error while saving the C and D details to database.";
+					logger.info(message);
+					return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(message);
+				}
+				message = "GDRS C and excel file uploaded succesfully.";
+				logger.info(message);
+				return ResponseEntity.status(HttpStatus.CREATED).body(message);
+			
+			} catch (IOException e) {
+				message = "Could not process the file.";
+				logger.info(message);
+				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(message);
+			}
+		}
+		
+		// if file format is not excel.
+		message = "please upload an excel file !";
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(message);
+	}
+
+
+	private List<GDRSCandD> savedGDRSCandDToDB(List<GDRSCandD> candDList) {
+		return gdrsCandDRespository.saveAll(candDList);
+	}
+
+
+	private List<GDRSCandD> GDRSCandDToList(MultipartFile file) throws IOException {
+		return GDRSCandDHelper.excelToGDRSCandD(file.getInputStream());
 	}
 	
 }

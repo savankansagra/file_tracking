@@ -1,0 +1,21 @@
+<div>
+	<table cellspacing="0" rules="all" border="1">
+		<tr>
+			<th scope="col">Reg. No.</th><th scope="col">Reg. Date.</th><th scope="col">Appl. Date.</th><th scope="col">Farmer Name</th><th scope="col">Supplier</th><th scope="col">MIS System</th><th scope="col">Loanee / Non Loanee</th><th scope="col">Area (Hac)</th><th scope="col">back</th><th scope="col">Lastscan</th><th scope="col">InwardDt</th>
+		</tr><tr>
+			<td>2223-SK-5255</td><td>30/03/2023</td><td>01/03/2023</td><td>GOSWAMI VASUDEVGIRI DEVGIRI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.660</td><td>&nbsp;</td><td>&nbsp;</td><td>02/03/2023</td>
+		</tr><tr>
+			<td>2223-BK-24188</td><td>23/03/2023</td><td>25/02/2023</td><td>KANBI MAFABHAI RAMJIBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.480</td><td>&nbsp;</td><td>&nbsp;</td><td>28/02/2023</td>
+		</tr><tr>
+			<td>2223-RJT-4360</td><td>29/03/2023</td><td>22/02/2023</td><td>GIRISHBHAI VASHRAMBHAI DASLANI</td><td>ROYAL  ROYAL IRRITECH</td><td>Drip</td><td>Non Loanee</td><td>0.800</td><td>&nbsp;</td><td>&nbsp;</td><td>27/03/2023</td>
+		</tr><tr>
+			<td>2223-BK-22643</td><td>15/03/2023</td><td>13/02/2023</td><td>KOLI DARIYABEN BABUBHAI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.620</td><td>&nbsp;</td><td>&nbsp;</td><td>20/02/2023</td>
+		</tr><tr>
+			<td>2223-BK-22640</td><td>15/03/2023</td><td>13/02/2023</td><td>KOLI CHAMANJI MAGANJI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.500</td><td>&nbsp;</td><td>&nbsp;</td><td>20/02/2023</td>
+		</tr><tr>
+			<td>2223-BK-22639</td><td>15/03/2023</td><td>13/02/2023</td><td>KOLI BHAYCHANDJI MAGANJI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.670</td><td>&nbsp;</td><td>&nbsp;</td><td>20/02/2023</td>
+		</tr><tr>
+			<td>2223-BK-22637</td><td>15/03/2023</td><td>13/02/2023</td><td>KOLI RAMABHAI KARSHANJI</td><td>ROYAL  ROYAL IRRITECH</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.510</td><td>&nbsp;</td><td>&nbsp;</td><td>20/02/2023</td>
+		</tr>
+	</table>
+</div>

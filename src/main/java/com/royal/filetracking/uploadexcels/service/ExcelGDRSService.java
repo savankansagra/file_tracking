@@ -32,6 +32,15 @@ public interface ExcelGDRSService {
 	 */
 	ResponseEntity<String> saveGDRSPendingRegistration(MultipartFile file);
 
+	/**
+	 * C and D
+	 * convert C and D excel file to DB object and save.
+	 * 
+	 * @param file
+	 * @return
+	 */
+	ResponseEntity<String> saveGDRSCandD(MultipartFile file);
+
 	
 	
 }

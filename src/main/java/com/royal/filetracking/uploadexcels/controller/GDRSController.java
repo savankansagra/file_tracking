@@ -48,11 +48,27 @@ public class GDRSController {
 		return excelGDRSService.saveGDRSPendingSupplier(file);
 	}
 
-	
+	/**
+	 * Pending Registration file upload.
+	 * 
+	 * @param file
+	 * @return
+	 */
 	@PostMapping("/pending_reg")
 	public ResponseEntity<String> uploadGDRSPendingRegistration(@RequestParam("file") MultipartFile file){
 		logger.info("GDRS Pending Registration : uploading file...");
 		return excelGDRSService.saveGDRSPendingRegistration(file);
 	}
 	
+	/**
+	 * C and D file upload.
+	 * 
+	 * @param file
+	 * @return
+	 */
+	@PostMapping("/c_and_d")
+	public ResponseEntity<String> uploadGDRSCandDRegistration(@RequestParam("file") MultipartFile file){
+		logger.info("GDRS C nad D : uploading file...");
+		return excelGDRSService.saveGDRSCandD(file);
+	}
 }
