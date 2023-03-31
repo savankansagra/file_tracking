@@ -61,14 +61,14 @@ public class GDRSController {
 	}
 	
 	/**
-	 * C and D file upload.
+	 * C and D Sent file upload.
 	 * 
 	 * @param file
 	 * @return
 	 */
-	@PostMapping("/c_and_d")
-	public ResponseEntity<String> uploadGDRSCandDRegistration(@RequestParam("file") MultipartFile file){
-		logger.info("GDRS C nad D : uploading file...");
-		return excelGDRSService.saveGDRSCandD(file);
+	@PostMapping("/c_and_d_sent")
+	public ResponseEntity<String> uploadGDRSCandDSentRegistration(@RequestParam("file") MultipartFile file){
+		logger.info("GDRS C and D Sent : uploading file...");
+		return excelGDRSService.saveGDRSCandDSent(file);
 	}
 }

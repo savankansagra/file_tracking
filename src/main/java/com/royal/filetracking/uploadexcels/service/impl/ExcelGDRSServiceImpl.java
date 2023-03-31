@@ -12,15 +12,15 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.royal.filetracking.uploadexcels.helper.ExcelHelper;
-import com.royal.filetracking.uploadexcels.helper.GDRSCandDHelper;
+import com.royal.filetracking.uploadexcels.helper.GDRSCandDSentHelper;
 import com.royal.filetracking.uploadexcels.helper.GDRSNewRegistrationHelper;
 import com.royal.filetracking.uploadexcels.helper.GDRSPendingRegistrationHelper;
 import com.royal.filetracking.uploadexcels.helper.GDRSPendingSupplierHelper;
-import com.royal.filetracking.uploadexcels.model.GDRSCandD;
+import com.royal.filetracking.uploadexcels.model.GDRSCandDSent;
 import com.royal.filetracking.uploadexcels.model.GDRSNewRegistation;
 import com.royal.filetracking.uploadexcels.model.GDRSPendingRegistration;
 import com.royal.filetracking.uploadexcels.model.GDRSPendingSupplier;
-import com.royal.filetracking.uploadexcels.repository.GDRSCandDRespository;
+import com.royal.filetracking.uploadexcels.repository.GDRSCandDSentRespository;
 import com.royal.filetracking.uploadexcels.repository.GDRSNewRegistrationRepository;
 import com.royal.filetracking.uploadexcels.repository.GDRSPendingRegistrationRepository;
 import com.royal.filetracking.uploadexcels.repository.GDRSPendingSupplierRepository;
@@ -40,7 +40,7 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 	GDRSPendingRegistrationRepository gdrsPendingRegistrationRepository;
 		
 	@Autowired
-	GDRSCandDRespository gdrsCandDRespository;
+	GDRSCandDSentRespository gdrsCandDSentRespository;
 	
 	
 	public final Logger logger = LoggerFactory.getLogger(ExcelGDRSServiceImpl.class);
@@ -212,34 +212,34 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 
 	
 	/**
-	 * C and D
-	 * convert C and D excel file to DB object and save.
+	 * C and D Sent
+	 * convert C and D Sent excel file to DB object and save.
 	 * 
 	 * @param file
 	 * @return
 	 */
 	@Override
-	public ResponseEntity<String> saveGDRSCandD(MultipartFile file) {
+	public ResponseEntity<String> saveGDRSCandDSent(MultipartFile file) {
 		String message = "";
-		logger.info("Saving GDRS C and D file.");
+		logger.info("Saving GDRS C and D Sent file.");
 		if(ExcelHelper.hasExcelFormat(file)) {
 			try {
 				// Get List of object from the file.
-				List<GDRSCandD> candDList = this.GDRSCandDToList(file);
+				List<GDRSCandDSent> candDList = this.GDRSCandDSentToList(file);
 				if(candDList.isEmpty()) {
-					message = "Error while parsing the C and D excel file";
+					message = "Error while parsing the C and D Sent excel file";
 					logger.info(message);
 					return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(message);
 				}
 				
 				// Save list to database.
-				List<GDRSCandD> savedCandD = this.savedGDRSCandDToDB(candDList);
+				List<GDRSCandDSent> savedCandD = this.savedGDRSCandDSentToDB(candDList);
 				if(savedCandD.isEmpty()) {
-					message = "Error while saving the C and D details to database.";
+					message = "Error while saving the C and D Sent details to database.";
 					logger.info(message);
 					return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(message);
 				}
-				message = "GDRS C and excel file uploaded succesfully.";
+				message = "GDRS C and D Sent excel file uploaded succesfully.";
 				logger.info(message);
 				return ResponseEntity.status(HttpStatus.CREATED).body(message);
 			
@@ -256,13 +256,13 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 	}
 
 
-	private List<GDRSCandD> savedGDRSCandDToDB(List<GDRSCandD> candDList) {
-		return gdrsCandDRespository.saveAll(candDList);
+	private List<GDRSCandDSent> savedGDRSCandDSentToDB(List<GDRSCandDSent> candDList) {
+		return gdrsCandDSentRespository.saveAll(candDList);
 	}
 
 
-	private List<GDRSCandD> GDRSCandDToList(MultipartFile file) throws IOException {
-		return GDRSCandDHelper.excelToGDRSCandD(file.getInputStream());
+	private List<GDRSCandDSent> GDRSCandDSentToList(MultipartFile file) throws IOException {
+		return GDRSCandDSentHelper.excelToGDRSCandDSent(file.getInputStream());
 	}
 	
 }
