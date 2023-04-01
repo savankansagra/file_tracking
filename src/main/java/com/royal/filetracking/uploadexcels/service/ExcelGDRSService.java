@@ -1,5 +1,7 @@
 package com.royal.filetracking.uploadexcels.service;
 
+import java.util.Map;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -12,7 +14,7 @@ public interface ExcelGDRSService {
 	 * @param file
 	 * @return
 	 */
-	ResponseEntity<String> saveGDRSNewRegistration(MultipartFile file);
+	ResponseEntity<Map<?, ?>> saveGDRSNewRegistration(MultipartFile file);
 
 	/**
 	 * Pending Supplier 
@@ -21,7 +23,7 @@ public interface ExcelGDRSService {
 	 * @param file
 	 * @return
 	 */
-	ResponseEntity<String> saveGDRSPendingSupplier(MultipartFile file);
+	ResponseEntity<Map<?, ?>> saveGDRSPendingSupplier(MultipartFile file);
 
 	/**
 	 * Pending Registration
@@ -30,7 +32,7 @@ public interface ExcelGDRSService {
 	 * @param file
 	 * @return
 	 */
-	ResponseEntity<String> saveGDRSPendingRegistration(MultipartFile file);
+	ResponseEntity<Map<?, ?>> saveGDRSPendingRegistration(MultipartFile file);
 
 	/**
 	 * C and D Sent
@@ -39,7 +41,25 @@ public interface ExcelGDRSService {
 	 * @param file
 	 * @return
 	 */
-	ResponseEntity<String> saveGDRSCandDSent(MultipartFile file);
+	ResponseEntity<Map<?, ?>> saveGDRSCandDSent(MultipartFile file);
+
+	/**
+	 * C and D Cleared
+	 * convert C and D Cleared excel file to DB Object and save.
+	 * 
+	 * @param file
+	 * @return
+	 */
+	ResponseEntity<Map<?, ?>> saveGDRSCandDCleared(MultipartFile file);
+
+	/**
+	 * Received for correction
+	 * convert received for correction excel file to DB Object and save.
+	 * 
+	 * @param file
+	 * @return
+	 */
+	ResponseEntity<Map<?, ?>> saveGDRSReceivedForCorrection(MultipartFile file);
 
 	
 	

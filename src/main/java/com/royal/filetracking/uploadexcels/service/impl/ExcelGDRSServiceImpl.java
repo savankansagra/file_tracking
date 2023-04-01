@@ -1,8 +1,11 @@
 package com.royal.filetracking.uploadexcels.service.impl;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+import org.apache.commons.collections4.map.HashedMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,18 +15,24 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.royal.filetracking.uploadexcels.helper.ExcelHelper;
+import com.royal.filetracking.uploadexcels.helper.GDRSCandDClearedHelper;
 import com.royal.filetracking.uploadexcels.helper.GDRSCandDSentHelper;
 import com.royal.filetracking.uploadexcels.helper.GDRSNewRegistrationHelper;
 import com.royal.filetracking.uploadexcels.helper.GDRSPendingRegistrationHelper;
 import com.royal.filetracking.uploadexcels.helper.GDRSPendingSupplierHelper;
+import com.royal.filetracking.uploadexcels.helper.GDRSReceivedForCorrectionHelper;
+import com.royal.filetracking.uploadexcels.model.GDRSCandDCleared;
 import com.royal.filetracking.uploadexcels.model.GDRSCandDSent;
 import com.royal.filetracking.uploadexcels.model.GDRSNewRegistation;
 import com.royal.filetracking.uploadexcels.model.GDRSPendingRegistration;
 import com.royal.filetracking.uploadexcels.model.GDRSPendingSupplier;
+import com.royal.filetracking.uploadexcels.model.GDRSReceivedForCorrection;
+import com.royal.filetracking.uploadexcels.repository.GDRSCandDClearedRespository;
 import com.royal.filetracking.uploadexcels.repository.GDRSCandDSentRespository;
 import com.royal.filetracking.uploadexcels.repository.GDRSNewRegistrationRepository;
 import com.royal.filetracking.uploadexcels.repository.GDRSPendingRegistrationRepository;
 import com.royal.filetracking.uploadexcels.repository.GDRSPendingSupplierRepository;
+import com.royal.filetracking.uploadexcels.repository.GDRSReceivedForCorrectionRespository;
 import com.royal.filetracking.uploadexcels.service.ExcelGDRSService;
 
 
@@ -42,6 +51,12 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 	@Autowired
 	GDRSCandDSentRespository gdrsCandDSentRespository;
 	
+	@Autowired
+	GDRSCandDClearedRespository	gdrsCandDClearedRespository;
+	
+	@Autowired
+	GDRSReceivedForCorrectionRespository gdrsReceivedForCorrectionRespository;
+	
 	
 	public final Logger logger = LoggerFactory.getLogger(ExcelGDRSServiceImpl.class);
 	
@@ -54,9 +69,10 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 	 * @return
 	 */
 	@Override
-	public ResponseEntity<String> saveGDRSNewRegistration(MultipartFile file) {
+	public ResponseEntity<Map<?, ?>> saveGDRSNewRegistration(MultipartFile file) {
 		String message = "";
 		logger.info("Saving GDRS new registration file.");
+		Map<String, String> resp = new HashedMap<>();
 		if(ExcelHelper.hasExcelFormat(file)) {
 			try {
 				// Get List of object from the file.
@@ -64,7 +80,8 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 				if(newRegistrationList.isEmpty()) {
 					message = "Error while parsing the new registration excel file.";
 					logger.info(message);
-					return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(resp);
 				}
 				
 				// Save list to database.
@@ -72,21 +89,27 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 				if(savedRegistration.isEmpty()) {
 					message = "Error while saving the new registration details to database.";
 					logger.info(message);
-					return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
 				}
 				message = "GDRS New Registration excel file uploaded succesfully.";
 				logger.info(message);
-				return ResponseEntity.status(HttpStatus.CREATED).body(message);
+				
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.CREATED).body(resp);
+				
 			} catch (IOException e) {
 				message = "Could not process the file.";
 				logger.info(message);
-				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(message);
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
 			}
 		}
 		
 		// if file format is not excel.
 		message = "please upload an excel file !";
-		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(message);
+		resp.put("message", message);
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(resp);
 	}
 	
 	
@@ -100,7 +123,6 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 	}
 
 	
-	
 	/**
 	 * Pending Supplier 
 	 * convert Pending Supplier excel file to DB Object and save.
@@ -109,9 +131,10 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 	 * @return
 	 */
 	@Override
-	public ResponseEntity<String> saveGDRSPendingSupplier(MultipartFile file) {
+	public ResponseEntity<Map<?, ?>> saveGDRSPendingSupplier(MultipartFile file) {
 		String message = "";
 		logger.info("Saving GDRS Pending Supplier file.");
+		Map<String, String> resp = new HashedMap<>();
 		if(ExcelHelper.hasExcelFormat(file)) {
 			try {
 				// Get List of object from the file.
@@ -119,7 +142,8 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 				if(pendingSupplierList.isEmpty()) {
 					message = "Error while parsing the pending supplier excel file";
 					logger.info(message);
-					return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(resp);
 				}
 				
 				// Save list to database
@@ -127,21 +151,25 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 				if(savedPendingSupplier.isEmpty()) {
 					message = "Error while saving the pending supplier details to database.";
 					logger.info(message);
-					return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
 				}
 				message = "GDRS Pending Supplier excel file uploaded succesfully.";
 				logger.info(message);
-				return ResponseEntity.status(HttpStatus.CREATED).body(message);
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.CREATED).body(resp);
 			} catch (Exception e) {
 				message = "Could not process the file.";
 				logger.info(message);
-				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(message);
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
 			}
 		}
 		
 		// if file format is not excel.
 		message = "please upload an excel file !";
-		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(message);
+		resp.put("message", message);
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(resp);
 	}
 
 
@@ -163,9 +191,10 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 	 * @return
 	 */
 	@Override
-	public ResponseEntity<String> saveGDRSPendingRegistration(MultipartFile file) {
+	public ResponseEntity<Map<?, ?>> saveGDRSPendingRegistration(MultipartFile file) {
 		String message = "";
 		logger.info("Saving GDRS Pending Registration file.");
+		Map<String, String> resp = new HashMap<>();
 		if(ExcelHelper.hasExcelFormat(file)) {
 			try {
 				// Get List of object from the file.
@@ -173,7 +202,8 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 				if(pendingRegistrationList.isEmpty()) {
 					message = "Error while parsing the pending registration excel file";
 					logger.info(message);
-					return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(resp);
 				}
 				
 				// Save list to database.
@@ -181,22 +211,26 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 				if(savedPendingRegistration.isEmpty()) {
 					message = "Error while saving the pending registration details to database.";
 					logger.info(message);
-					return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
 				}
 				message = "GDRS Pending Registration excel file uploaded succesfully.";
 				logger.info(message);
-				return ResponseEntity.status(HttpStatus.CREATED).body(message);
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.CREATED).body(resp);
 			
 			} catch (IOException e) {
 				message = "Could not process the file.";
 				logger.info(message);
-				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(message);
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
 			}
 		}
 		
 		// if file format is not excel.
 		message = "please upload an excel file !";
-		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(message);
+		resp.put("message", message);
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(resp);
 	}
 
 
@@ -219,50 +253,181 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 	 * @return
 	 */
 	@Override
-	public ResponseEntity<String> saveGDRSCandDSent(MultipartFile file) {
+	public ResponseEntity<Map<?, ?>> saveGDRSCandDSent(MultipartFile file) {
 		String message = "";
 		logger.info("Saving GDRS C and D Sent file.");
+		Map<String, String> resp = new HashMap<>();
 		if(ExcelHelper.hasExcelFormat(file)) {
 			try {
 				// Get List of object from the file.
-				List<GDRSCandDSent> candDList = this.GDRSCandDSentToList(file);
-				if(candDList.isEmpty()) {
+				List<GDRSCandDSent> candDSentList = this.GDRSCandDSentToList(file);
+				if(candDSentList.isEmpty()) {
 					message = "Error while parsing the C and D Sent excel file";
 					logger.info(message);
-					return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(resp);
 				}
 				
 				// Save list to database.
-				List<GDRSCandDSent> savedCandD = this.savedGDRSCandDSentToDB(candDList);
-				if(savedCandD.isEmpty()) {
+				List<GDRSCandDSent> savedCandDSent = this.savedGDRSCandDSentToDB(candDSentList);
+				if(savedCandDSent.isEmpty()) {
 					message = "Error while saving the C and D Sent details to database.";
 					logger.info(message);
-					return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
 				}
 				message = "GDRS C and D Sent excel file uploaded succesfully.";
 				logger.info(message);
-				return ResponseEntity.status(HttpStatus.CREATED).body(message);
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.CREATED).body(resp);
 			
 			} catch (IOException e) {
 				message = "Could not process the file.";
 				logger.info(message);
-				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(message);
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
 			}
 		}
 		
 		// if file format is not excel.
 		message = "please upload an excel file !";
-		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(message);
+		logger.info(message);
+		resp.put("message", message);
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(resp);
 	}
 
 
-	private List<GDRSCandDSent> savedGDRSCandDSentToDB(List<GDRSCandDSent> candDList) {
-		return gdrsCandDSentRespository.saveAll(candDList);
+	private List<GDRSCandDSent> savedGDRSCandDSentToDB(List<GDRSCandDSent> candDSentList) {
+		return gdrsCandDSentRespository.saveAll(candDSentList);
 	}
 
 
 	private List<GDRSCandDSent> GDRSCandDSentToList(MultipartFile file) throws IOException {
 		return GDRSCandDSentHelper.excelToGDRSCandDSent(file.getInputStream());
+	}
+
+
+	/**
+	 * C and D Cleared
+	 * convert C and D Cleared excel file to DB Object and save.
+	 * 
+	 * @param file
+	 * @return
+	 */
+	@Override
+	public ResponseEntity<Map<?, ?>> saveGDRSCandDCleared(MultipartFile file) {
+		String message = "";
+		logger.info("Saving GDRS C and D Cleared file.");
+		Map<String, String> resp = new HashMap<>();
+		if(ExcelHelper.hasExcelFormat(file)) {
+			try {
+				// Get List of object from the file.
+				List<GDRSCandDCleared> candDClearedList = this.GDRSCandDClearedToList(file);
+				if(candDClearedList.isEmpty()) {
+					message = "Error while parsing the C and D Cleared excel file";
+					logger.info(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(resp);
+				}
+				
+				// Save list to database.
+				List<GDRSCandDCleared> savedCandDCleared = this.savedGDRSCandDClearedToDB(candDClearedList);
+				if(savedCandDCleared.isEmpty()) {
+					message = "Error while saving the C and D Cleared details to database.";
+					logger.info(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
+				}
+				message = "GDRS C and D Cleared excel file uploaded succesfully.";
+				logger.info(message);
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.CREATED).body(resp);
+			
+			} catch (IOException e) {
+				message = "Could not process the file.";
+				logger.info(message);
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
+			}
+		}
+		
+		// if file format is not excel.
+		message = "please upload an excel file !";
+		logger.info(message);
+		resp.put("message", message);
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(resp);
+	}
+
+
+	private List<GDRSCandDCleared> savedGDRSCandDClearedToDB(List<GDRSCandDCleared> candDList) {
+		return gdrsCandDClearedRespository.saveAll(candDList);
+	}
+
+
+	private List<GDRSCandDCleared> GDRSCandDClearedToList(MultipartFile file) throws IOException {
+		return GDRSCandDClearedHelper.excelToGDRSCandDCleared(file.getInputStream());
+	}
+
+	
+	/**
+	 * Received for correction
+	 * convert received for correction excel file to DB Object and save.
+	 * 
+	 * @param file
+	 * @return
+	 */
+	@Override
+	public ResponseEntity<Map<?, ?>> saveGDRSReceivedForCorrection(MultipartFile file) {
+		String message = "";
+		logger.info("Saving GDRS Received for correction file.");
+		Map<String, String> resp = new HashMap<>();
+		if(ExcelHelper.hasExcelFormat(file)) {
+			try {
+				// Get List of object from the file.
+				List<GDRSReceivedForCorrection> receivedForCorrectionList = this.GDRSReceivedForCorrectionToList(file);
+				if(receivedForCorrectionList.isEmpty()) {
+					message = "Error while parsing the Received for correction excel file";
+					logger.info(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(resp);
+				}
+				
+				// Save list to database.
+				List<GDRSReceivedForCorrection> savedRecivedForCorrection = this.savedGDRSReceivedForCorrectionToDB(receivedForCorrectionList);
+				if(savedRecivedForCorrection.isEmpty()) {
+					message = "Error while saving the received for correction details to database.";
+					logger.info(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
+				}
+				message = "GDRS received for correction excel file uploaded succesfully.";
+				logger.info(message);
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.CREATED).body(resp);
+			
+			} catch (IOException e) {
+				message = "Could not process the file.";
+				logger.info(message);
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
+			}
+		}
+		
+		// if file format is not excel.
+		message = "please upload an excel file !";
+		logger.info(message);
+		resp.put("message", message);
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(resp);
+	}
+
+
+	private List<GDRSReceivedForCorrection> savedGDRSReceivedForCorrectionToDB(List<GDRSReceivedForCorrection> candDList) {
+		return gdrsReceivedForCorrectionRespository.saveAll(candDList);
+	}
+
+
+	private List<GDRSReceivedForCorrection> GDRSReceivedForCorrectionToList(MultipartFile file) throws IOException {
+		return GDRSReceivedForCorrectionHelper.excelToGDRSReceivedForCorrections(file.getInputStream());
 	}
 	
 }

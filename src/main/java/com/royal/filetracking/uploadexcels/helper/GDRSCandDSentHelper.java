@@ -31,8 +31,8 @@ public class GDRSCandDSentHelper {
 					rowNumber++;
 					continue;
 				}
-				GDRSCandDSent gdrsCandD = getCandDSentFromRow(currentRow);
-				listOfCandDSent.add(gdrsCandD);
+				GDRSCandDSent gdrsCandDSent = getCandDSentFromRow(currentRow);
+				listOfCandDSent.add(gdrsCandDSent);
 				rowNumber++;
 			}
 		} catch(Exception e) {

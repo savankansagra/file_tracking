@@ -1,0 +1,27 @@
+<div>
+	<table cellspacing="0" rules="all" border="1">
+		<tr>
+			<th scope="col">Reg. No.</th><th scope="col">Reg. Date.</th><th scope="col">Appl. Date.</th><th scope="col">Farmer Name</th><th scope="col">Supplier</th><th scope="col">MIS System</th><th scope="col">Loanee / Non Loanee</th><th scope="col">Area (Hac)</th><th scope="col">BACK</th><th scope="col">Lastscan</th>
+		</tr><tr>
+			<td>2223-BK-22626</td><td>&nbsp;</td><td>13/02/2023</td><td>KANBI MASUNGBHAI RAMJIBHAI</td><td>ROYAL</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.470</td><td>B</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-1881</td><td>&nbsp;</td><td>10/12/2022</td><td>PATEL BHANJIBHAI DEVSHIBHAI</td><td>ROYAL</td><td>Drip</td><td>Non Loanee</td><td>1.900</td><td>B</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-19224</td><td>&nbsp;</td><td>18/01/2023</td><td>RATHOD MASRABHAI SAVABHAI</td><td>ROYAL</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>1.130</td><td>B</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-22641</td><td>&nbsp;</td><td>13/02/2023</td><td>KOLI NAGJIBHAI MAGANJI</td><td>ROYAL</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.450</td><td>B</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-RJT-4361</td><td>&nbsp;</td><td>22/02/2023</td><td>SHREEMAN JASMATBHAI VALLABHBHAI</td><td>ROYAL</td><td>Drip</td><td>Non Loanee</td><td>1.350</td><td>B</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-AMR-3692</td><td>&nbsp;</td><td>28/02/2023</td><td>BHALALA JAVERBHAI RAGHAVBHAI</td><td>ROYAL</td><td>Drip</td><td>Non Loanee</td><td>1.210</td><td>B</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3962</td><td>&nbsp;</td><td>17/03/2023</td><td>PRAJAPATI PINKIBEN LAVJIBHAI</td><td>ROYAL</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.370</td><td>B</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-2348</td><td>24/03/2023</td><td>30/01/2023</td><td>PATEL MANOJBHAI CHHAGANBHAI</td><td>ROYAL</td><td>Drip</td><td>Non Loanee</td><td>1.260</td><td>B</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-2349</td><td>24/03/2023</td><td>30/01/2023</td><td>PATEL MANOJBHAI CHHAGANBHAI</td><td>ROYAL</td><td>Drip</td><td>Non Loanee</td><td>2.180</td><td>B</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-AMR-3693</td><td>&nbsp;</td><td>28/02/2023</td><td>BHALALA BAVCHANDBHAI RAGHAVBHAI</td><td>ROYAL</td><td>Drip</td><td>Non Loanee</td><td>2.100</td><td>B</td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div>
