@@ -1,0 +1,123 @@
+<div>
+	<table cellspacing="0" rules="all" border="1">
+		<tr>
+			<th scope="col">Reg. No.</th><th scope="col">Reg. Date.</th><th scope="col">taluka</th><th scope="col">village</th><th scope="col">WO Date</th><th scope="col">Lapse Days</th><th scope="col">Farmer Name</th><th scope="col">MIS System</th><th scope="col">Loanee / Non Loanee</th><th scope="col">Area (Hac)</th><th scope="col">Status</th><th scope="col">Est. Miscost</th><th scope="col">Remaining days for Auto delete</th><th scope="col">Est. Subsidy Amount</th><th scope="col">Est. Tribal Subsidy Amount</th><th scope="col">TPA Signed Date</th><th scope="col">TPA Signed laps days</th>
+		</tr><tr>
+			<td>2223-SK-5255</td><td>30/03/2023</td><td>TALOD</td><td>MOTA CHEKHLA</td><td>31/03/2023</td><td>5</td><td>GOSWAMI VASUDEVGIRI DEVGIRI - 9428949405</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.660</td><td>Workorder Received</td><td>93601.020</td><td>146</td><td>42372.790</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-4101</td><td>29/03/2023</td><td>UNJHA</td><td>KARLI</td><td>30/03/2023</td><td>6</td><td>RABARI DHARAMSHIBHAI BABARBHAI - 6353836431</td><td>Sprinkler</td><td>Non Loanee</td><td>0.800</td><td>Workorder Received</td><td>20327.150</td><td>169</td><td>14510.820</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-AMR-3299</td><td>27/03/2023</td><td>BABRA</td><td>DEVALIYA MOTA</td><td>28/03/2023</td><td>8</td><td>DASLANIYA KALYANBHAI KESHAVBHAI - 6352290977</td><td>Drip</td><td>Non Loanee</td><td>1.190</td><td>Workorder Received</td><td>129744.320</td><td>123</td><td>79096.680</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-4001</td><td>24/03/2023</td><td>UNJHA</td><td>UNAVA</td><td>27/03/2023</td><td>9</td><td>CHAUDHARI RAJESHKUMAR REVABHAI - 7016018398</td><td>Sprinkler</td><td>Non Loanee</td><td>0.400</td><td>Workorder Received</td><td>15833.570</td><td>165</td><td>9816.000</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-KH-1283</td><td>22/03/2023</td><td>KAPADVANJ</td><td>CHIKHLOD</td><td>23/03/2023</td><td>13</td><td>KRUNAL KANTILAL - 8735844773</td><td>Drip</td><td>Non Loanee</td><td>0.800</td><td>Workorder Received</td><td>86837.960</td><td>163</td><td>43213.520</td><td>0.000</td><td>24/03/2023</td><td>12</td>
+		</tr><tr>
+			<td>2223-RJT-4323</td><td>20/03/2023</td><td>JASDAN</td><td>RANPARDA</td><td>21/03/2023</td><td>15</td><td>SHREEMAN CHIMANBHAI SHAMBHUBHAI - 9979755223</td><td>Drip</td><td>Non Loanee</td><td>2.350</td><td>Workorder Received</td><td>270130.080</td><td>138</td><td>156199.330</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-AMR-3568</td><td>20/03/2023</td><td>BABRA</td><td>BALEL PIPARIYA</td><td>21/03/2023</td><td>15</td><td>JITENDRABHAI RAVJIBHAI BHALALA - 9723425057</td><td>Drip</td><td>Non Loanee</td><td>1.730</td><td>Workorder Received</td><td>191405.420</td><td>138</td><td>114989.290</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-RJT-4326</td><td>20/03/2023</td><td>JASDAN</td><td>RANPARDA</td><td>21/03/2023</td><td>15</td><td>SHREEMAN KALUBHAI NAGJIBHAI DASLANI - 9726890543</td><td>Drip</td><td>Non Loanee</td><td>1.500</td><td>Workorder Received</td><td>170712.060</td><td>138</td><td>99701.700</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-RJT-4324</td><td>20/03/2023</td><td>JASDAN</td><td>RANPARDA</td><td>21/03/2023</td><td>15</td><td>SHREEMAN JASMATBHAI NAGJIBHAI - 9913528525</td><td>Drip</td><td>Non Loanee</td><td>1.740</td><td>Workorder Received</td><td>196776.690</td><td>138</td><td>115653.970</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-19225</td><td>09/03/2023</td><td>DHANERA</td><td>YAVARPURA</td><td>17/03/2023</td><td>19</td><td>KOLI MAVAJI VAHTAJI - 7486068964</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.650</td><td>Workorder Received</td><td>112997.470</td><td>104</td><td>52000.000</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-19277</td><td>14/03/2023</td><td>DHANERA</td><td>MAGARAWA</td><td>15/03/2023</td><td>21</td><td>RABARI NARNABHAI HIRABHAI - 9727457672</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.910</td><td>Workorder Received</td><td>132682.090</td><td>104</td><td>63700.000</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-19223</td><td>12/03/2023</td><td>DHANERA</td><td>MAGARAWA</td><td>13/03/2023</td><td>23</td><td>RATHOD MOHANBHAI NAVABHAI - 9979421952</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>1.130</td><td>Workorder Received</td><td>155420.240</td><td>104</td><td>90400.000</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3826</td><td>12/03/2023</td><td>VISNAGAR</td><td>VADU</td><td>13/03/2023</td><td>23</td><td>JAYANTIBHAI ISHVARBHAI PATEL - 9925577080</td><td>Sprinkler</td><td>Non Loanee</td><td>0.600</td><td>Workorder Received</td><td>17185.170</td><td>152</td><td>12266.550</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-18965</td><td>03/03/2023</td><td>DHANERA</td><td>MAGARAWA</td><td>04/03/2023</td><td>32</td><td>RATHOD RAMESHBHAI NAVABHAI - 9925779963</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.520</td><td>Workorder Received</td><td>78725.650</td><td>103</td><td>41600.000</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-2325</td><td>03/03/2023</td><td>DHANSURA</td><td>RAMPURA KAMPO</td><td>04/03/2023</td><td>32</td><td>PATIDAR ARVINDBHAI DAHYABHAI - 9998240166</td><td>Drip</td><td>Non Loanee</td><td>1.970</td><td>Workorder Received</td><td>282443.110</td><td>109</td><td>130941.570</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-2326</td><td>03/03/2023</td><td>DHANSURA</td><td>RAMPURA KAMPO</td><td>04/03/2023</td><td>32</td><td>PATEL SHAILESHKUMAR DAHYABHAI - 9426822543</td><td>Drip</td><td>Non Loanee</td><td>1.230</td><td>Workorder Received</td><td>197831.550</td><td>109</td><td>81755.390</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SK-4595</td><td>20/02/2023</td><td>TALOD</td><td>NANA CHEKHLA</td><td>21/02/2023</td><td>43</td><td>PATEL RAMESHBHAI CHELABHAI - 9106829466</td><td>Drip</td><td>Non Loanee</td><td>0.460</td><td>Workorder Received</td><td>74275.480</td><td>109</td><td>30575.190</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SK-4594</td><td>20/02/2023</td><td>TALOD</td><td>NANA CHEKHLA</td><td>21/02/2023</td><td>43</td><td>PATEL RAJUBHAI CHELABHAI - 9106829466</td><td>Drip</td><td>Non Loanee</td><td>0.250</td><td>Workorder Received</td><td>38021.710</td><td>109</td><td>16616.950</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-2292</td><td>17/02/2023</td><td>MODASA</td><td>KOLIKHAD</td><td>19/02/2023</td><td>45</td><td>MEGHARAJI M.YASIF ABDULKARIM - 9712158258</td><td>Drip</td><td>Non Loanee</td><td>2.350</td><td>Workorder Received</td><td>265748.730</td><td>105</td><td>156199.330</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SRT-848</td><td>16/02/2023</td><td>MANDVI(S)</td><td>TUKED</td><td>17/02/2023</td><td>47</td><td>ASHOKBHAI HARSINGBHAI - 7874928710</td><td>Sprinkler</td><td>Non Loanee</td><td>1.000</td><td>Workorder Received</td><td>23050.320</td><td>109</td><td>17484.440</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-13791</td><td>13/02/2023</td><td>DANTIVADA</td><td>GANGUWADA</td><td>14/02/2023</td><td>50</td><td>HARIJAN DAHYABHAI PUNJABHAI - 9638906921</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.400</td><td>Workorder Received</td><td>64932.470</td><td>65</td><td>36604.440</td><td>0.000</td><td>22/03/2023</td><td>14</td>
+		</tr><tr>
+			<td>2223-SRT-356</td><td>31/01/2023</td><td>MANDVI(S)</td><td>PATAL</td><td>02/02/2023</td><td>62</td><td>MANISHBHAI JAGINBHAI - 9099833056</td><td>Sprinkler</td><td>Non Loanee</td><td>1.400</td><td>Workorder Received</td><td>25716.130</td><td>-85</td><td>19507.600</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SK-2387</td><td>12/01/2023</td><td>TALOD</td><td>MOHANPUR</td><td>13/01/2023</td><td>82</td><td>PATEL VIPULBHAI RAMESHBHAI - 9909537657</td><td>Drip</td><td>Non Loanee</td><td>1.240</td><td>Workorder Received</td><td>131254.700</td><td>9</td><td>52766.410</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-KH-256</td><td>30/12/2022</td><td>KAPADVANJ</td><td>ANTISAR</td><td>31/12/2022</td><td>95</td><td>PARMAR HARSHADBHAI RAMABHAI URFE RAMAJI - 7862010898</td><td>Sprinkler</td><td>Non Loanee</td><td>0.600</td><td>Workorder Received</td><td>16634.660</td><td>-126</td><td>11837.330</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-2109</td><td>29/12/2022</td><td>BAYAD</td><td>ZANKHARIYA</td><td>30/12/2022</td><td>96</td><td>SOLANKI MAHOBATSING MOTISING - 8347480542</td><td>Drip</td><td>Non Loanee</td><td>0.610</td><td>Workorder Received</td><td>88087.340</td><td>75</td><td>40545.360</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-1453</td><td>16/11/2022</td><td>DHANSURA</td><td>KASHIPURA</td><td>12/12/2022</td><td>114</td><td>BHARWAD LAKHABHAI DEVABHAI - 6354415276</td><td>Drip</td><td>Non Loanee</td><td>1.050</td><td>Workorder Received</td><td>112293.060</td><td>9</td><td>55183.970</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-1925</td><td>03/11/2022</td><td>KHERALU</td><td>MACHHAVA</td><td>03/11/2022</td><td>153</td><td>CHAUDHARI SHAILESHKUMAR  RAMJIBHAI - 9998236899</td><td>Sprinkler</td><td>Non Loanee</td><td>0.400</td><td>Workorder Received</td><td>15315.270</td><td>6</td><td>9480.800</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-1399</td><td>29/10/2022</td><td>DHANSURA</td><td>SHIKA</td><td>02/11/2022</td><td>154</td><td>PATEL KANTIBHAI SHAMJIBHAI - 9428063041</td><td>Drip</td><td>Non Loanee</td><td>3.090</td><td>Workorder Received</td><td>295671.110</td><td>7</td><td>118803.800</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-1398</td><td>29/10/2022</td><td>DHANSURA</td><td>SHIKA</td><td>02/11/2022</td><td>154</td><td>PATEL KANTIBHAI SHAMJIBHAI - 9428063041</td><td>Drip</td><td>Non Loanee</td><td>0.710</td><td>Workorder Received</td><td>76332.410</td><td>7</td><td>47766.500</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-1121</td><td>27/10/2022</td><td>MODASA</td><td>KUDOL</td><td>01/11/2022</td><td>155</td><td>SISODIYA NIRUBA SHRAVANSINH - 9974303735</td><td>Drip</td><td>Non Loanee</td><td>1.540</td><td>Workorder Received</td><td>170227.860</td><td>-19</td><td>119351.230</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-1122</td><td>27/10/2022</td><td>MODASA</td><td>KUDOL</td><td>01/11/2022</td><td>155</td><td>SISODIYA SHANTABA INDRASINH - 9974303735</td><td>Drip</td><td>Non Loanee</td><td>1.540</td><td>Workorder Received</td><td>170806.490</td><td>-19</td><td>119351.230</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-1120</td><td>27/10/2022</td><td>MODASA</td><td>KUDOL</td><td>01/11/2022</td><td>155</td><td>SISODIYA MAHENDRASINH INDRASINH - 9974303735</td><td>Drip</td><td>Non Loanee</td><td>1.990</td><td>Workorder Received</td><td>228066.990</td><td>-19</td><td>154226.590</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-7829</td><td>07/10/2022</td><td>DHANERA</td><td>DHANERA</td><td>11/10/2022</td><td>176</td><td>KANBI TEJABHAI JIVABHAI - 9714396801</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.750</td><td>Workorder Received</td><td>115274.310</td><td>-19</td><td>44217.800</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-AND-303</td><td>28/09/2022</td><td>UMRETH</td><td>JAKHALA</td><td>06/10/2022</td><td>181</td><td>GORDHANBHAI GOPALBHAI - 9316825535</td><td>Drip</td><td>Non Loanee</td><td>0.430</td><td>Workorder Received</td><td>86404.860</td><td>-12</td><td>30100.000</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BVN-2088</td><td>12/09/2022</td><td>SHIHOR</td><td>SIHOR</td><td>29/09/2022</td><td>188</td><td>BUDHABHAI DEHURBHAI CHOHLA - 9825389912</td><td>Drip</td><td>Non Loanee</td><td>0.840</td><td>Workorder Received</td><td>68934.510</td><td>-30</td><td>24056.840</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BVN-1992</td><td>12/09/2022</td><td>SHIHOR</td><td>AMARGADH</td><td>28/09/2022</td><td>189</td><td>BHAVESHBHAI MANJIBHAI BHALANI - 9328644407</td><td>Drip</td><td>Non Loanee</td><td>0.820</td><td>Workorder Received</td><td>93462.800</td><td>-41</td><td>32096.360</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-KH-631</td><td>21/09/2022</td><td>KAPADVANJ</td><td>RAMPURA (SORNA)</td><td>22/09/2022</td><td>195</td><td>RAYSANGBHAI MANABHAI ZALA - 9409828668</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.810</td><td>Workorder Received</td><td>75411.220</td><td>-33</td><td>45527.270</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-1086</td><td>20/09/2022</td><td>MODASA</td><td>ITADI</td><td>21/09/2022</td><td>196</td><td>PARMAR MANAJI UDAJI - 9016944159</td><td>Drip</td><td>Non Loanee</td><td>0.950</td><td>Workorder Received</td><td>131144.050</td><td>-24</td><td>73625.760</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BVN-1765</td><td>22/08/2022</td><td>TALAJA</td><td>MANAR</td><td>21/09/2022</td><td>196</td><td>CHANDUBHAI SHAMJIBHAI ITALIYA - 9925131332</td><td>Drip</td><td>Non Loanee</td><td>1.090</td><td>Workorder Received</td><td>65758.220</td><td>-82</td><td>31216.620</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BHR-285</td><td>05/08/2022</td><td>VALIA</td><td>NIKOLI</td><td>16/09/2022</td><td>201</td><td>HARJIBHAI MANJIBHAI BALAR - 9904403559</td><td>Sprinkler</td><td>Non Loanee</td><td>2.800</td><td>Workorder Received</td><td>36372.520</td><td>-112</td><td>22725.330</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SRT-300</td><td>05/08/2022</td><td>MANGROL(S)</td><td>KANSALI</td><td>16/09/2022</td><td>201</td><td>AJITBHAI RESHANBHAI - 7265718119</td><td>Sprinkler</td><td>Non Loanee</td><td>3.000</td><td>Workorder Received</td><td>37840.270</td><td>-112</td><td>28708.950</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SRT-357</td><td>01/08/2022</td><td>MANGROL(S)</td><td>AMBAVADI</td><td>15/09/2022</td><td>202</td><td>THAKORBHAI TIMBABHAI CHAUDHARI - 9723189721</td><td>Sprinkler</td><td>Non Loanee</td><td>1.000</td><td>Workorder Received</td><td>22028.110</td><td>-85</td><td>16708.650</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BHR-257</td><td>02/08/2022</td><td>VALIA</td><td>PATAL</td><td>14/09/2022</td><td>203</td><td>PRAGJIBHAI MONABHAI VANANI - 9376479114</td><td>Sprinkler</td><td>Non Loanee</td><td>0.400</td><td>Workorder Received</td><td>12493.020</td><td>-118</td><td>7800.640</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SRT-354</td><td>01/08/2022</td><td>MANGROL(S)</td><td>KANSALI</td><td>14/09/2022</td><td>203</td><td>THAGIYABHAI JETHIYABHAI - 8238750979</td><td>Sprinkler</td><td>Non Loanee</td><td>0.800</td><td>Workorder Received</td><td>18466.630</td><td>-87</td><td>14005.750</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SRT-344</td><td>01/08/2022</td><td>MANDVI(S)</td><td>TUKED</td><td>14/09/2022</td><td>203</td><td>INESHBHAI DHIRUBHAI CHAUDHARI - 9327481677</td><td>Sprinkler</td><td>Non Loanee</td><td>1.600</td><td>Workorder Received</td><td>27566.700</td><td>-87</td><td>20912.050</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SRT-334</td><td>26/07/2022</td><td>MANGROL(S)</td><td>AMKHUTA</td><td>09/09/2022</td><td>208</td><td>RUMSIBHAI GOHLABHAI - 8469653410</td><td>Sprinkler</td><td>Non Loanee</td><td>1.000</td><td>Workorder Received</td><td>22028.110</td><td>-93</td><td>16708.650</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-KH-446</td><td>25/07/2022</td><td>THASARA</td><td>KHIJALPUR TALPAD</td><td>09/09/2022</td><td>208</td><td>PARMAR PUNJABHAI PRABHATBHAI - 6353298688</td><td>Drip</td><td>Non Loanee</td><td>0.870</td><td>Workorder Received</td><td>147645.850</td><td>-99</td><td>63467.540</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BHR-259</td><td>25/07/2022</td><td>VALIA</td><td>PATAL</td><td>06/09/2022</td><td>211</td><td>PRAGJIBHAI MONABHAI VANANI - 9376479114</td><td>Sprinkler</td><td>Non Loanee</td><td>2.400</td><td>Workorder Received</td><td>34256.530</td><td>-118</td><td>21402.830</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-1448</td><td>02/08/2022</td><td>KHERALU</td><td>CHADA</td><td>05/09/2022</td><td>212</td><td>BAROT KIRITKUMAR SOMABHAI - 9909021996</td><td>Sprinkler</td><td>Non Loanee</td><td>0.400</td><td>Workorder Received</td><td>13647.850</td><td>-78</td><td>9480.800</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BHR-260</td><td>13/07/2022</td><td>VALIA</td><td>PATAL</td><td>05/09/2022</td><td>212</td><td>PRAGJIBHAI MONABHAI VANANI - 9376479114</td><td>Sprinkler</td><td>Non Loanee</td><td>3.000</td><td>Workorder Received</td><td>37840.270</td><td>-118</td><td>23642.670</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SRT-274</td><td>13/07/2022</td><td>MANDVI(S)</td><td>TUKED</td><td>05/09/2022</td><td>212</td><td>VADUBEN CHHAGANBHAI - 8980914846</td><td>Sprinkler</td><td>Non Loanee</td><td>1.000</td><td>Workorder Received</td><td>22028.110</td><td>-118</td><td>16708.650</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SRT-257</td><td>16/07/2022</td><td>UMARPADA</td><td>SATVAN</td><td>03/09/2022</td><td>214</td><td>LAXMANBHAI GAMIYABHAI - 9313730483</td><td>Sprinkler</td><td>Non Loanee</td><td>1.000</td><td>Workorder Received</td><td>22028.110</td><td>-118</td><td>16708.650</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SRT-259</td><td>13/07/2022</td><td>UMARPADA</td><td>UMARPADA</td><td>03/09/2022</td><td>214</td><td>RAVJIBHAI BEDIYABHAI - 9712318068</td><td>Sprinkler</td><td>Non Loanee</td><td>0.800</td><td>Workorder Received</td><td>18466.630</td><td>-118</td><td>14005.750</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SRT-256</td><td>13/07/2022</td><td>UMARPADA</td><td>CHAVDA</td><td>03/09/2022</td><td>214</td><td>KUNTABEN CHHAGANBHAI - 6353195493</td><td>Sprinkler</td><td>Non Loanee</td><td>1.000</td><td>Workorder Received</td><td>22028.110</td><td>-118</td><td>16708.650</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BHR-221</td><td>20/06/2022</td><td>VALIA</td><td>PETIYA</td><td>24/06/2022</td><td>285</td><td>SHANTILAL GULABDAS - 9898443469</td><td>Drip</td><td>Non Loanee</td><td>2.620</td><td>Workorder Received</td><td>310916.560</td><td>-127</td><td>215742.850</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SRT-222</td><td>17/06/2022</td><td>UMARPADA</td><td>PANCH AMBA</td><td>20/06/2022</td><td>289</td><td>DHANJIBHAI DHEDIYABHAI - 9727486881</td><td>Drip</td><td>Non Loanee</td><td>0.900</td><td>Workorder Received</td><td>112988.160</td><td>-129</td><td>74110.140</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-604</td><td>13/06/2022</td><td>VISNAGAR</td><td>BOKARVADA</td><td>16/06/2022</td><td>293</td><td>RABARI RAMESHBHAI JEMORBHAI - 9979484622</td><td>Sprinkler</td><td>Non Loanee</td><td>1.000</td><td>Workorder Received</td><td>26490.030</td><td>-126</td><td>16550.400</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-2091</td><td>06/06/2022</td><td>THARAD</td><td>VAGHASAN</td><td>08/06/2022</td><td>301</td><td>PATEL SAGTHABHAI MANSENGBHAI - 8000284102</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.500</td><td>Workorder Received</td><td>83586.000</td><td>-136</td><td>35000.000</td><td>0.000</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div>

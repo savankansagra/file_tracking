@@ -160,100 +160,240 @@
 			"name": "uploadexcels",
 			"item": [
 				{
-					"name": "GDRS_New_Registration_file_upload",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "file",
-									"type": "file",
-									"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GDRS/GDRSDashbord.xlsx"
+					"name": "gworks",
+					"item": [
+						{
+							"name": "GWORKS_WorkOrder_Received_file_upload",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GWORKS/WO Received_ROYAL IRRITECH_05-04-2023.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v3/gworks/wo_rcvd",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v3",
+										"gworks",
+										"wo_rcvd"
+									]
 								}
-							]
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/v3/gdrs/new_registration",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"v3",
-								"gdrs",
-								"new_registration"
-							]
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "GDRS_Pending_supplier_file_upload",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "file",
-									"type": "file",
-									"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GDRS/Pending_Sup.xlsx"
+					"name": "GDRS",
+					"item": [
+						{
+							"name": "GDRS_C_and_D_cleared",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GDRS/GDRSCandDCleared.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://d7dc-43-242-123-46.in.ngrok.io/api/v3/gdrs/c_and_d_cleared",
+									"protocol": "https",
+									"host": [
+										"d7dc-43-242-123-46",
+										"in",
+										"ngrok",
+										"io"
+									],
+									"path": [
+										"api",
+										"v3",
+										"gdrs",
+										"c_and_d_cleared"
+									]
 								}
-							]
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/v3/gdrs/pending_sup",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"v3",
-								"gdrs",
-								"pending_sup"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GDRS_Pending_Registration_file_upload",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "file",
-									"type": "file",
-									"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GDRS/Pending_Registration.xlsx"
+						{
+							"name": "GDRS_C_and_D_sent",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GDRS/CandD.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v3/gdrs/c_and_d_sent",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v3",
+										"gdrs",
+										"c_and_d_sent"
+									]
 								}
-							]
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/v3/gdrs/pending_reg",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"v3",
-								"gdrs",
-								"pending_reg"
-							]
+						{
+							"name": "GDRS_New_Registration_file_upload",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GDRS/NewRegistration.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v3/gdrs/new_registration",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v3",
+										"gdrs",
+										"new_registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GDRS_Pending_supplier_file_upload",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GDRS/Pending_Sup.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v3/gdrs/pending_sup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v3",
+										"gdrs",
+										"pending_sup"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GDRS_Pending_Registration_file_upload",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GDRS/Pending_Registration.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v3/gdrs/pending_reg",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v3",
+										"gdrs",
+										"pending_reg"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GDRS_Received_for_correction",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GDRS/GDRSReceivedForCorrection.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v3/gdrs/received_for_correction",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v3",
+										"gdrs",
+										"received_for_correction"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				}
 			]
 		}
