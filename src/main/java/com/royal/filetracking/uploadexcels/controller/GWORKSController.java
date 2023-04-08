@@ -37,5 +37,17 @@ public class GWORKSController {
 		logger.info("GWorks work order received : uploading file...");
 		return excelGWORKSService.saveWorkOrderReceived(file);
 	}
+	
+	/**
+	 * Work Order Received file upload.
+	 * 
+	 * @param file
+	 * @return
+	 */
+	@PostMapping("/tpa_sent")
+	public ResponseEntity<Map<?, ?>> uploadGWORKSTPASent(@RequestParam("file") MultipartFile file){
+		logger.info("GWorks TPA Sent : uploading file...");
+		return excelGWORKSService.saveTPASent(file);
+	}
 
 }

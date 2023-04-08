@@ -14,8 +14,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.royal.filetracking.uploadexcels.helper.ExcelHelper;
+import com.royal.filetracking.uploadexcels.helper.GWORKSTPASentHelper;
 import com.royal.filetracking.uploadexcels.helper.GWORKSWoRcvdHelper;
+import com.royal.filetracking.uploadexcels.model.GWORKSTPASent;
 import com.royal.filetracking.uploadexcels.model.GWORKSWoRcvd;
+import com.royal.filetracking.uploadexcels.repository.GWORKSTPASentRepository;
 import com.royal.filetracking.uploadexcels.repository.GWORKSWorkOrderReceivedRepository;
 import com.royal.filetracking.uploadexcels.service.ExcelGWORKSService;
 
@@ -25,6 +28,8 @@ public class ExcelGWORKSServiceImpl implements ExcelGWORKSService {
 	@Autowired
 	GWORKSWorkOrderReceivedRepository gworksWorkOrderReceivedRepository;
 	
+	@Autowired
+	GWORKSTPASentRepository gworksTPASentRepository;
 	
 	public final Logger logger = LoggerFactory.getLogger(ExcelGWORKSServiceImpl.class);
 	
@@ -90,5 +95,72 @@ public class ExcelGWORKSServiceImpl implements ExcelGWORKSService {
 	private List<GWORKSWoRcvd> saveWorkOrderReceivedToDb(List<GWORKSWoRcvd> workOrderReceivedList) {
 		return gworksWorkOrderReceivedRepository.saveAll(workOrderReceivedList);
 	}
+
+
+	/**
+	 * GWORKS TPA Sent
+	 * Convert TPA Sent excel file to DB Object and save.
+	 * 
+	 * @param file
+	 * @return
+	 */
+	@Override
+	public ResponseEntity<Map<?, ?>> saveTPASent(MultipartFile file) {
+		String message = "";
+		logger.info("Saving TPA Send received file");
+		Map<String, String> resp = new HashMap<>();
+		if(ExcelHelper.hasExcelFormat(file)) {
+			try {
+				// Get list of object from the file.
+				List<GWORKSTPASent> tpaSentList = this.GWORKSTPASentConvertToList(file);
+				if(tpaSentList.isEmpty()) {
+					message="error while parsing the TPA Sent excel file";
+					logger.info(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED)
+							.body(resp);
+				}
+				
+				// Save list to database
+				List<GWORKSTPASent> savedTPASentList = this.saveTPASentToDb(tpaSentList);
+				if(savedTPASentList.isEmpty()) {
+					message = "Error while saving the TPA Sent data to database.";
+					logger.info(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
+				}
+				message = "GWORKS TPA Sent file uploaded succesfully.";
+				logger.info(message);
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.CREATED).body(resp);
+				
+			} catch (IOException e) {
+				message = "Could not process the file.";
+				logger.info(message);
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+						.body(resp);
+			} 
+		}
+		
+		// if file format is not excel.
+		message = "please upload an excel file!";
+		resp.put("message", message);
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(resp);
+
+	}
+
+
+	private List<GWORKSTPASent> GWORKSTPASentConvertToList(MultipartFile file) throws IOException {
+		return GWORKSTPASentHelper.excelToGWORKSTPASent(file.getInputStream());
+	}
+
+	
+	private List<GWORKSTPASent> saveTPASentToDb(List<GWORKSTPASent> tpaSentList) {
+		return gworksTPASentRepository.saveAll(tpaSentList);
+	}
+
+
+	
 
 }

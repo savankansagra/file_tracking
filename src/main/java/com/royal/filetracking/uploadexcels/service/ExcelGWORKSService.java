@@ -16,6 +16,15 @@ public interface ExcelGWORKSService {
 	 */
 	ResponseEntity<Map<?, ?>> saveWorkOrderReceived(MultipartFile file);
 
+	/**
+	 * GWORKS TPA Sent
+	 * Convert TPA Sent excel file to DB Object and save.
+	 * 
+	 * @param file
+	 * @return
+	 */
+	ResponseEntity<Map<?, ?>> saveTPASent(MultipartFile file);
+
 	
 	
 	

@@ -1,0 +1,77 @@
+<div>
+	<table cellspacing="0" rules="all" border="1">
+		<tr>
+			<th scope="col">Reg. No.</th><th scope="col">Reg. Date.</th><th scope="col">taluka</th><th scope="col">village</th><th scope="col">TPA Sent DT</th><th scope="col">Farmer Name</th><th scope="col">MIS System</th><th scope="col">Loanee / Non Loanee</th><th scope="col">Area (Hac)</th><th scope="col">Status</th><th scope="col">Est. Miscost</th><th scope="col">Phy Verified Date</th><th scope="col">Finance Verified Date</th><th scope="col">TPA inward dt</th><th scope="col">Instrument inward dt</th><th scope="col">TPA</th>
+		</tr><tr>
+			<td>2223-SRT-343</td><td>01/08/2022</td><td>MANDVI(S)</td><td>KHOD AMBA</td><td>07/04/2023</td><td>KERASHI SHAVKASHA HANSOTIYA - 8320934920</td><td>Sprinkler</td><td>Non Loanee</td><td>3.000</td><td>TPA Sent</td><td>37840.270</td><td>&nbsp;</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SRT-351</td><td>01/08/2022</td><td>MANGROL(S)</td><td>KANSALI</td><td>07/04/2023</td><td>PARBHUBHAI RESHMABHAI - 9726829529</td><td>Sprinkler</td><td>Non Loanee</td><td>1.000</td><td>TPA Sent</td><td>22028.110</td><td>&nbsp;</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SRT-335</td><td>19/08/2022</td><td>MANGROL(S)</td><td>JHINORA</td><td>07/04/2023</td><td>VINODBHAI MACHABHAI - 9712797297</td><td>Sprinkler</td><td>Non Loanee</td><td>1.000</td><td>TPA Sent</td><td>22028.110</td><td>&nbsp;</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SRT-246</td><td>02/07/2022</td><td>MANGROL(S)</td><td>RATOLA</td><td>07/04/2023</td><td>BHUPENDRABHAI KUVARJIBHAI GAMIT - 9537405122</td><td>Drip</td><td>Non Loanee</td><td>2.430</td><td>TPA Sent</td><td>266232.560</td><td>&nbsp;</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3859</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>07/04/2023</td><td>PATEL MAHESHBHAI NARSHIBHAI - 7203040129</td><td>Drip</td><td>Non Loanee</td><td>1.940</td><td>TPA Sent</td><td>386004.590</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-21996</td><td>10/03/2023</td><td>DANTIVADA</td><td>BHILADA</td><td>31/03/2023</td><td>KOLI NAGJIBHAI DHIRABHAI - 9099757320</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.900</td><td>TPA Sent</td><td>123480.880</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-21985</td><td>09/03/2023</td><td>DANTIVADA</td><td>BHILADA</td><td>31/03/2023</td><td>VIRMOTAR (KOLI) BAJUBHAI DHIRABHAI - 8469860715</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>1.130</td><td>TPA Sent</td><td>142825.020</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-19274</td><td>09/03/2023</td><td>DHANERA</td><td>MAGARAWA</td><td>31/03/2023</td><td>RABARI JUNJABHAI RAGNATHBHAI - 9558550914</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.550</td><td>TPA Sent</td><td>86115.930</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-BK-22622</td><td>14/03/2023</td><td>DHANERA</td><td>ASIYA</td><td>31/03/2023</td><td>KOLI JAYANTIBHAI DAHYAJI - 9904657946</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>1.560</td><td>TPA Sent</td><td>201523.220</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-KH-1214</td><td>10/03/2023</td><td>KAPADVANJ</td><td>RAMPURA (SORNA)</td><td>31/03/2023</td><td>JITENDRABHAI ARJANBHAI ZALA - 8200741945</td><td>Sprinkler</td><td>Non Loanee</td><td>0.400</td><td>TPA Sent</td><td>14043.190</td><td>&nbsp;</td><td>28/03/2023</td><td>05-04-2023 00:00:00</td><td>27-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SK-4585</td><td>19/02/2023</td><td>TALOD</td><td>NANA CHEKHLA</td><td>30/03/2023</td><td>PATEL CHHANABHAI MAGANBHAI - 9428556455</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.900</td><td>TPA Sent</td><td>102501.950</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SK-4678</td><td>20/02/2023</td><td>TALOD</td><td>NANA CHEKHLA</td><td>30/03/2023</td><td>PATEL JAYNTIBHAI BAHECHARBHAI - 9428774132</td><td>Drip</td><td>Non Loanee</td><td>1.300</td><td>TPA Sent</td><td>150832.140</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SK-4183</td><td>31/01/2023</td><td>TALOD</td><td>NANA CHEKHLA</td><td>30/03/2023</td><td>PATEL BAHECHARBHAI RAMABHAI - 9428774132</td><td>Drip</td><td>Non Loanee</td><td>0.900</td><td>TPA Sent</td><td>127823.520</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3840</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL NARENDRABHAI MAHADEVBHAI - 9428552744</td><td>Drip</td><td>Non Loanee</td><td>1.460</td><td>TPA Sent</td><td>277704.060</td><td>02/04/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3841</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL GANPATBHAI NARSINHBHAI - 7203040129</td><td>Drip</td><td>Non Loanee</td><td>1.450</td><td>TPA Sent</td><td>278352.300</td><td>02/04/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3849</td><td>22/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL MANISH AMARATBHAI - 9904503552</td><td>Drip</td><td>Non Loanee</td><td>1.360</td><td>TPA Sent</td><td>262662.080</td><td>04/04/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3855</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL VASUDEVBHAI ISHVARBHAI - 9979166433</td><td>Drip</td><td>Non Loanee</td><td>0.740</td><td>TPA Sent</td><td>143541.760</td><td>02/04/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3850</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL ANILKUMAR CHANDUBHAI - 9924860675</td><td>Drip</td><td>Non Loanee</td><td>1.160</td><td>TPA Sent</td><td>228840.550</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3847</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL RAMESHBHAI ASHARAMBHAI - 8758989292</td><td>Drip</td><td>Non Loanee</td><td>0.700</td><td>TPA Sent</td><td>135677.560</td><td>04/04/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3845</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL GANPATBHAI MOHANBHAI - 9427677388</td><td>Drip</td><td>Non Loanee</td><td>3.230</td><td>TPA Sent</td><td>625742.930</td><td>04/04/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3857</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL SUKHDEVBHAI DEVJIBHAI - 9924860675</td><td>Drip</td><td>Non Loanee</td><td>1.200</td><td>TPA Sent</td><td>231112.470</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3846</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL ASHVINBHAI VASUDEVBHAI - 8758989292</td><td>Drip</td><td>Non Loanee</td><td>0.720</td><td>TPA Sent</td><td>140567.650</td><td>04/04/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3844</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL CHANDRAKANTBHAI GORDHANBHAI - 8758989292</td><td>Drip</td><td>Non Loanee</td><td>0.700</td><td>TPA Sent</td><td>136897.720</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3843</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL CHAMANBHAI BHAGVANBHAI - 9904503552</td><td>Drip</td><td>Non Loanee</td><td>1.400</td><td>TPA Sent</td><td>274986.870</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3860</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL CHANDRIKABEN MANJIBHAI - 9924860675</td><td>Drip</td><td>Non Loanee</td><td>1.810</td><td>TPA Sent</td><td>345673.450</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3853</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL VANMALIBHAI HARJIBHAI - 9924860675</td><td>Drip</td><td>Non Loanee</td><td>0.760</td><td>TPA Sent</td><td>147821.740</td><td>02/04/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3854</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL MUKTABEN AMRUTLAL - 9904503552</td><td>Drip</td><td>Non Loanee</td><td>0.710</td><td>TPA Sent</td><td>140120.710</td><td>02/04/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3856</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL CHETANKUMAR GHANSHYAMBHAI - 9924860675</td><td>Drip</td><td>Non Loanee</td><td>1.510</td><td>TPA Sent</td><td>297715.550</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3839</td><td>22/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL JAYMIN CHIMANBHAI - 8758989292</td><td>Drip</td><td>Non Loanee</td><td>1.470</td><td>TPA Sent</td><td>282757.290</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3851</td><td>22/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL JATINBHAI SUKHDEVBHAI - 9904503552</td><td>Drip</td><td>Non Loanee</td><td>0.740</td><td>TPA Sent</td><td>144151.830</td><td>04/04/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3848</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL KHUSHALBHAI MOHANBHAI - 9427677388</td><td>Drip</td><td>Non Loanee</td><td>1.350</td><td>TPA Sent</td><td>258914.160</td><td>04/04/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3836</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL RASHIKBHAI RAMJIBHAI - 9712667605</td><td>Drip</td><td>Non Loanee</td><td>1.370</td><td>TPA Sent</td><td>263234.010</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3858</td><td>19/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL GHANSHYAMBHAI HARIBHAI - 8758989292</td><td>Drip</td><td>Non Loanee</td><td>0.840</td><td>TPA Sent</td><td>160369.060</td><td>31/03/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3842</td><td>22/03/2023</td><td>KADI</td><td>MAHARAJPURA</td><td>30/03/2023</td><td>PATEL MANSUKHBHAI BHAGVANBHAI - 9924860675</td><td>Drip</td><td>Non Loanee</td><td>0.710</td><td>TPA Sent</td><td>138775.570</td><td>04/04/2023</td><td>&nbsp;</td><td>31-03-2023 00:00:00</td><td>31-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-3199</td><td>04/03/2023</td><td>KHERALU</td><td>SAMOJA</td><td>22/03/2023</td><td>CHAUDHARI RAMESHBHAI KUBERBHAI - 9558679216</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.320</td><td>TPA Sent</td><td>44523.550</td><td>24/03/2023</td><td>&nbsp;</td><td>22-03-2023 00:00:00</td><td>22-03-2023 00:00:00</td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div>

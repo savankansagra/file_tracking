@@ -8,9 +8,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="work_order_received")
-public class GWORKSWoRcvd {
-	
+@Table(name="tpa_sent")
+public class GWORKSTPASent {
+
 	@Id
 	@Column(name ="Reg_No")
 	private String regNo;
@@ -24,11 +24,8 @@ public class GWORKSWoRcvd {
 	@Column(name = "village")
 	private String village;
 	
-	@Column(name = "WO_Date")
-	private Date woDate;
-	
-	@Column(name = "Lapse_Days")
-	private Integer lapseDays;
+	@Column(name = "TPA_Sent_Dt")
+	private Date tpaSentDt;
 	
 	@Column(name = "Farmer_Name")
 	private String farmerName;
@@ -47,29 +44,29 @@ public class GWORKSWoRcvd {
 	
 	@Column(name = "Est_mis_cost")
 	private Double estMisCose;
+
+	@Column(name = "Phy_Verified_Date")
+	private String phyVerifiedDate;
 	
-	@Column(name = "remaining_days_for_auto_delete")
-	private Integer remaingDaysForAutoDelete;
+	@Column(name = "Finance_Verified_Date")
+	private String financeVerifiedDate;
 	
-	@Column(name = "est_subsidy_amount")
-	private Double estimatedSubsidyAmount;
+	@Column(name = "TPA_inward_dt")
+	private String tpaInwardDt;
 	
-	@Column(name = "est_trible_subsidy_amount")
-	private Integer estTribleSubsidyAmount;
+	@Column(name = "Instrument_inward_dt")
+	private Date instrumentInwardDt;
 	
-	@Column(name = "TPA_Signed_date")
-	private String TPASignedDate;
-	
-	@Column(name= "TPA_Signed_laps_days")
-	private String TPASignedLapsDays;
+	@Column(name = "TPA")
+	private String tpa;
 
 	/**
-	 *  Constructor.
+	 * Constructor
 	 */
-	public GWORKSWoRcvd() {
+	public GWORKSTPASent() {
 		super();
 	}
-	
+
 	/**
 	 * Getters and Setters
 	 */
@@ -105,20 +102,12 @@ public class GWORKSWoRcvd {
 		this.village = village;
 	}
 
-	public Date getWoDate() {
-		return woDate;
+	public Date getTpaSentDt() {
+		return tpaSentDt;
 	}
 
-	public void setWoDate(Date woDate) {
-		this.woDate = woDate;
-	}
-
-	public Integer getLapseDays() {
-		return lapseDays;
-	}
-
-	public void setLapseDays(Integer lapseDays) {
-		this.lapseDays = lapseDays;
+	public void setTpaSentDt(Date tpaSentDt) {
+		this.tpaSentDt = tpaSentDt;
 	}
 
 	public String getFarmerName() {
@@ -169,43 +158,44 @@ public class GWORKSWoRcvd {
 		this.estMisCose = estMisCose;
 	}
 
-	public Integer getRemaingDaysForAutoDelete() {
-		return remaingDaysForAutoDelete;
+	public String getPhyVerifiedDate() {
+		return phyVerifiedDate;
 	}
 
-	public void setRemaingDaysForAutoDelete(Integer remaingDaysForAutoDelete) {
-		this.remaingDaysForAutoDelete = remaingDaysForAutoDelete;
+	public void setPhyVerifiedDate(String phyVerifiedDate) {
+		this.phyVerifiedDate = phyVerifiedDate;
 	}
 
-	public Double getEstimatedSubsidyAmount() {
-		return estimatedSubsidyAmount;
+	public String getFinanceVerifiedDate() {
+		return financeVerifiedDate;
 	}
 
-	public void setEstimatedSubsidyAmount(Double estimatedSubsidyAmount) {
-		this.estimatedSubsidyAmount = estimatedSubsidyAmount;
+	public void setFinanceVerifiedDate(String financeVerifiedDate) {
+		this.financeVerifiedDate = financeVerifiedDate;
 	}
 
-	public Integer getEstTribleSubsidyAmount() {
-		return estTribleSubsidyAmount;
+	public String getTpaInwardDt() {
+		return tpaInwardDt;
 	}
 
-	public void setEstTribleSubsidyAmount(Integer estTribleSubsidyAmount) {
-		this.estTribleSubsidyAmount = estTribleSubsidyAmount;
+	public void setTpaInwardDt(String tpaInwardDt) {
+		this.tpaInwardDt = tpaInwardDt;
 	}
 
-	public String getTPASignedDate() {
-		return TPASignedDate;
+	public Date getInstrumentInwardDt() {
+		return instrumentInwardDt;
 	}
 
-	public void setTPASignedDate(String tPASignedDate) {
-		TPASignedDate = tPASignedDate;
+	public void setInstrumentInwardDt(Date instrumentInwardDt) {
+		this.instrumentInwardDt = instrumentInwardDt;
 	}
 
-	public String getTPASignedLapsDays() {
-		return TPASignedLapsDays;
+	public String getTpa() {
+		return tpa;
 	}
 
-	public void setTPASignedLapsDays(String tPASignedLapsDays) {
-		TPASignedLapsDays = tPASignedLapsDays;
+	public void setTpa(String tpa) {
+		this.tpa = tpa;
 	}
+		
 }
