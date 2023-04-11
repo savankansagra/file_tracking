@@ -50,4 +50,11 @@ public class GWORKSController {
 		return excelGWORKSService.saveTPASent(file);
 	}
 
+	
+	@PostMapping("/tpa_cleared")
+	public ResponseEntity<Map<?, ?>> uploadGWORKSTPACleared(@RequestParam("file") MultipartFile file){
+		logger.info("GWorks TPA Cleared : uploading file...");
+		return excelGWORKSService.saveTPACleared(file);
+	}
+	
 }

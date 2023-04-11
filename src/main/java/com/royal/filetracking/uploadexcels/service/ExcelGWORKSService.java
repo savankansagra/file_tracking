@@ -25,6 +25,15 @@ public interface ExcelGWORKSService {
 	 */
 	ResponseEntity<Map<?, ?>> saveTPASent(MultipartFile file);
 
+	/**
+	 * GWORKS TPA Cleared
+	 * Convert TPA Cleared excel file to DB Object and save.
+	 * 
+	 * @param file
+	 * @return
+	 */
+	ResponseEntity<Map<?, ?>> saveTPACleared(MultipartFile file);
+
 	
 	
 	

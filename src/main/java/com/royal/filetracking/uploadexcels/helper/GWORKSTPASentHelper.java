@@ -33,8 +33,8 @@ public class GWORKSTPASentHelper {
 					rowNumber++;
 					continue;
 				}
-				GWORKSTPASent gworksWoRcvd = getTPASentFromRow(currentRow);
-				listOfGWORKSTPASent.add(gworksWoRcvd);
+				GWORKSTPASent gworksTpaSent = getTPASentFromRow(currentRow);
+				listOfGWORKSTPASent.add(gworksTpaSent);
 				rowNumber++;
 			}
 		} catch (Exception e) {
