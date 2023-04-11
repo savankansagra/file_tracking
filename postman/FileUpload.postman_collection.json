@@ -193,6 +193,70 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "GWORKS_TPA_Sent_file_upload",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GWORKS/TPA Sent_ROYAL IRRITECH_07-04-2023.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v3/gworks/tpa_sent",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v3",
+										"gworks",
+										"tpa_sent"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GWORKS_TPA_Cleared_file_upload",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GWORKS/TPA Sent_ROYAL IRRITECH_07-04-2023.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v3/gworks/tpa_cleared",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v3",
+										"gworks",
+										"tpa_cleared"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				},
