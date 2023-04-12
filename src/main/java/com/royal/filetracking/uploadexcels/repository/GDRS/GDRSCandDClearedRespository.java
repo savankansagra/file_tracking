@@ -1,8 +1,8 @@
-package com.royal.filetracking.uploadexcels.repository;
+package com.royal.filetracking.uploadexcels.repository.GDRS;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.royal.filetracking.uploadexcels.model.GDRSCandDCleared;
+import com.royal.filetracking.uploadexcels.model.GDRS.GDRSCandDCleared;
 
 public interface GDRSCandDClearedRespository extends JpaRepository<GDRSCandDCleared, String> {
 	

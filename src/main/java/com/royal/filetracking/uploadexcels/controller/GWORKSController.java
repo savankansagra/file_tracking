@@ -39,7 +39,7 @@ public class GWORKSController {
 	}
 	
 	/**
-	 * Work Order Received file upload.
+	 * TPA Sent file upload.
 	 * 
 	 * @param file
 	 * @return
@@ -51,10 +51,30 @@ public class GWORKSController {
 	}
 
 	
+	/**
+	 * TPA Cleared file upload.
+	 * 
+	 * @param file
+	 * @return
+	 */
 	@PostMapping("/tpa_cleared")
 	public ResponseEntity<Map<?, ?>> uploadGWORKSTPACleared(@RequestParam("file") MultipartFile file){
 		logger.info("GWorks TPA Cleared : uploading file...");
 		return excelGWORKSService.saveTPACleared(file);
 	}
+	
+	/**
+	 * Inspection send file upload.
+	 * 
+	 * @param file
+	 * @return
+	 */
+	@PostMapping("/insp_sent")
+	public ResponseEntity<Map<?, ?>> uploadGWORKSInspSent(@RequestParam("file") MultipartFile file){
+		logger.info("GWorks Inspection sent : uploading file...");
+		return excelGWORKSService.saveInspectionSent(file);
+	}
+	
+	
 	
 }

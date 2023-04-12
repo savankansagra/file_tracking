@@ -15,24 +15,24 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.royal.filetracking.uploadexcels.helper.ExcelHelper;
-import com.royal.filetracking.uploadexcels.helper.GDRSCandDClearedHelper;
-import com.royal.filetracking.uploadexcels.helper.GDRSCandDSentHelper;
-import com.royal.filetracking.uploadexcels.helper.GDRSNewRegistrationHelper;
-import com.royal.filetracking.uploadexcels.helper.GDRSPendingRegistrationHelper;
-import com.royal.filetracking.uploadexcels.helper.GDRSPendingSupplierHelper;
-import com.royal.filetracking.uploadexcels.helper.GDRSReceivedForCorrectionHelper;
-import com.royal.filetracking.uploadexcels.model.GDRSCandDCleared;
-import com.royal.filetracking.uploadexcels.model.GDRSCandDSent;
-import com.royal.filetracking.uploadexcels.model.GDRSNewRegistation;
-import com.royal.filetracking.uploadexcels.model.GDRSPendingRegistration;
-import com.royal.filetracking.uploadexcels.model.GDRSPendingSupplier;
-import com.royal.filetracking.uploadexcels.model.GDRSReceivedForCorrection;
-import com.royal.filetracking.uploadexcels.repository.GDRSCandDClearedRespository;
-import com.royal.filetracking.uploadexcels.repository.GDRSCandDSentRespository;
-import com.royal.filetracking.uploadexcels.repository.GDRSNewRegistrationRepository;
-import com.royal.filetracking.uploadexcels.repository.GDRSPendingRegistrationRepository;
-import com.royal.filetracking.uploadexcels.repository.GDRSPendingSupplierRepository;
-import com.royal.filetracking.uploadexcels.repository.GDRSReceivedForCorrectionRespository;
+import com.royal.filetracking.uploadexcels.helper.GDRS.GDRSCandDClearedHelper;
+import com.royal.filetracking.uploadexcels.helper.GDRS.GDRSCandDSentHelper;
+import com.royal.filetracking.uploadexcels.helper.GDRS.GDRSNewRegistrationHelper;
+import com.royal.filetracking.uploadexcels.helper.GDRS.GDRSPendingRegistrationHelper;
+import com.royal.filetracking.uploadexcels.helper.GDRS.GDRSPendingSupplierHelper;
+import com.royal.filetracking.uploadexcels.helper.GDRS.GDRSReceivedForCorrectionHelper;
+import com.royal.filetracking.uploadexcels.model.GDRS.GDRSCandDCleared;
+import com.royal.filetracking.uploadexcels.model.GDRS.GDRSCandDSent;
+import com.royal.filetracking.uploadexcels.model.GDRS.GDRSNewRegistation;
+import com.royal.filetracking.uploadexcels.model.GDRS.GDRSPendingRegistration;
+import com.royal.filetracking.uploadexcels.model.GDRS.GDRSPendingSupplier;
+import com.royal.filetracking.uploadexcels.model.GDRS.GDRSReceivedForCorrection;
+import com.royal.filetracking.uploadexcels.repository.GDRS.GDRSCandDClearedRespository;
+import com.royal.filetracking.uploadexcels.repository.GDRS.GDRSCandDSentRespository;
+import com.royal.filetracking.uploadexcels.repository.GDRS.GDRSNewRegistrationRepository;
+import com.royal.filetracking.uploadexcels.repository.GDRS.GDRSPendingRegistrationRepository;
+import com.royal.filetracking.uploadexcels.repository.GDRS.GDRSPendingSupplierRepository;
+import com.royal.filetracking.uploadexcels.repository.GDRS.GDRSReceivedForCorrectionRespository;
 import com.royal.filetracking.uploadexcels.service.ExcelGDRSService;
 
 
@@ -78,7 +78,8 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 				// Get List of object from the file.
 				List<GDRSNewRegistation> newRegistrationList = this.GDRSNewRegistrationConvertToList(file);
 				if(newRegistrationList.isEmpty()) {
-					message = "Error while parsing the new registration excel file.";
+//					message = "Error while parsing the new registration excel file.";
+					message = "Please Upload valid \"new registration\" excel file. ";
 					logger.info(message);
 					resp.put("message", message);
 					return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(resp);

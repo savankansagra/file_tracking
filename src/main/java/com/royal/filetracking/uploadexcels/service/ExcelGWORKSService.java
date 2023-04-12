@@ -34,6 +34,15 @@ public interface ExcelGWORKSService {
 	 */
 	ResponseEntity<Map<?, ?>> saveTPACleared(MultipartFile file);
 
+	/**
+	 * GWORKS Inspection Sent
+	 * Convert Inspection sent excel file to DB Object and save
+	 * 
+	 * @param file
+	 * @return
+	 */
+	ResponseEntity<Map<?, ?>> saveInspectionSent(MultipartFile file);
+
 	
 	
 	

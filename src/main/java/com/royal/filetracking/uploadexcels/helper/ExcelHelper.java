@@ -31,13 +31,11 @@ public class ExcelHelper {
 	 * @return
 	 */
 	public static boolean hasExcelFormat(MultipartFile file) {
-		// TODO Make format for all the files
-//		if(TYPE.equals(file.getContentType())) {
-//		return true;
-//	} else {
-//		return false;
-//	}
-		return true;
+		if(TYPE.equals(file.getContentType())) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 	
 

@@ -14,15 +14,15 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.royal.filetracking.uploadexcels.helper.ExcelHelper;
-import com.royal.filetracking.uploadexcels.helper.GWORKSTPAClearedHelper;
-import com.royal.filetracking.uploadexcels.helper.GWORKSTPASentHelper;
-import com.royal.filetracking.uploadexcels.helper.GWORKSWoRcvdHelper;
-import com.royal.filetracking.uploadexcels.model.GWORKSTPACleared;
-import com.royal.filetracking.uploadexcels.model.GWORKSTPASent;
-import com.royal.filetracking.uploadexcels.model.GWORKSWoRcvd;
-import com.royal.filetracking.uploadexcels.repository.GWORKSTPAClearedRepository;
-import com.royal.filetracking.uploadexcels.repository.GWORKSTPASentRepository;
-import com.royal.filetracking.uploadexcels.repository.GWORKSWorkOrderReceivedRepository;
+import com.royal.filetracking.uploadexcels.helper.GWORKS.GWORKSTPAClearedHelper;
+import com.royal.filetracking.uploadexcels.helper.GWORKS.GWORKSTPASentHelper;
+import com.royal.filetracking.uploadexcels.helper.GWORKS.GWORKSWoRcvdHelper;
+import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSTPACleared;
+import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSTPASent;
+import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSWoRcvd;
+import com.royal.filetracking.uploadexcels.repository.GWORKS.GWORKSTPAClearedRepository;
+import com.royal.filetracking.uploadexcels.repository.GWORKS.GWORKSTPASentRepository;
+import com.royal.filetracking.uploadexcels.repository.GWORKS.GWORKSWorkOrderReceivedRepository;
 import com.royal.filetracking.uploadexcels.service.ExcelGWORKSService;
 
 @Service
@@ -226,6 +226,21 @@ public class ExcelGWORKSServiceImpl implements ExcelGWORKSService {
 	}
 	
 	private List<GWORKSTPACleared> saveTPAClearedToDb(List<GWORKSTPACleared> tpaClearedList) {
+		return gworksTPAClearedRepository.saveAll(tpaClearedList);
+	}
+
+
+	@Override
+	public ResponseEntity<Map<?, ?>> saveInspectionSent(MultipartFile file) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	private List<GWORKSTPACleared> GWORKSInspSentConvertToList(MultipartFile file) throws IOException {
+		return GWORKSTPAClearedHelper.excelToGWORKSTPACleared(file.getInputStream());
+	}
+	
+	private List<GWORKSTPACleared> saveInspSentToDb(List<GWORKSTPACleared> tpaClearedList) {
 		return gworksTPAClearedRepository.saveAll(tpaClearedList);
 	}
 }

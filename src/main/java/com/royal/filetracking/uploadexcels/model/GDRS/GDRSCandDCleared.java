@@ -1,4 +1,4 @@
-package com.royal.filetracking.uploadexcels.model;
+package com.royal.filetracking.uploadexcels.model.GDRS;
 
 import java.util.Date;
 
@@ -8,15 +8,15 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "gdrs_pending_supplier")
-public class GDRSPendingSupplier {
+@Table(name="c_and_d_cleared")
+public class GDRSCandDCleared {
 	
 	@Id
 	@Column(name="Reg_No")
 	private String regNo;
 	
 	@Column(name="Reg_Date")
-	private String regDate;
+	private Date regDate;
 	
 	@Column(name="Appl_Date")
 	private Date applDate;
@@ -43,13 +43,13 @@ public class GDRSPendingSupplier {
 	private String lastscan;
 	
 	@Column(name="InwardDt")
-	private String inwardDt;
+	private Date inwardDt;
 
 	
 	/**
 	 *  Constructor.
 	 */
-	public GDRSPendingSupplier() {
+	public GDRSCandDCleared() {
 		super();
 	}
 	
@@ -65,11 +65,11 @@ public class GDRSPendingSupplier {
 		this.regNo = regNo;
 	}
 
-	public String getRegDate() {
+	public Date getRegDate() {
 		return regDate;
 	}
 
-	public void setRegDate(String regDate) {
+	public void setRegDate(Date regDate) {
 		this.regDate = regDate;
 	}
 
@@ -137,15 +137,11 @@ public class GDRSPendingSupplier {
 		this.lastscan = lastscan;
 	}
 
-	public String getInwardDt() {
+	public Date getInwardDt() {
 		return inwardDt;
 	}
 
-	public void setInwardDt(String inwardDt) {
+	public void setInwardDt(Date inwardDt) {
 		this.inwardDt = inwardDt;
 	}
-	
-
-	
-	
 }

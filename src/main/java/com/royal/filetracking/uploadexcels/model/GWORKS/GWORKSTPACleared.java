@@ -1,4 +1,4 @@
-package com.royal.filetracking.uploadexcels.model;
+package com.royal.filetracking.uploadexcels.model.GWORKS;
 
 import java.util.Date;
 

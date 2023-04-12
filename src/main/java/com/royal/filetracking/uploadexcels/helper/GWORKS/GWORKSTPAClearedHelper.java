@@ -1,4 +1,4 @@
-package com.royal.filetracking.uploadexcels.helper;
+package com.royal.filetracking.uploadexcels.helper.GWORKS;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,8 +13,9 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import com.royal.filetracking.uploadexcels.model.GWORKSTPACleared;
-import com.royal.filetracking.uploadexcels.model.GWORKSTPASent;
+import com.royal.filetracking.uploadexcels.helper.ExcelHelper;
+import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSTPACleared;
+import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSTPASent;
 
 public class GWORKSTPAClearedHelper {
 

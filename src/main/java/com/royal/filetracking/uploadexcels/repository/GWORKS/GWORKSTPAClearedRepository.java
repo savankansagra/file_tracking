@@ -1,8 +1,8 @@
-package com.royal.filetracking.uploadexcels.repository;
+package com.royal.filetracking.uploadexcels.repository.GWORKS;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.royal.filetracking.uploadexcels.model.GWORKSTPACleared;
+import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSTPACleared;
 
 public interface GWORKSTPAClearedRepository extends JpaRepository<GWORKSTPACleared, String> {
 	

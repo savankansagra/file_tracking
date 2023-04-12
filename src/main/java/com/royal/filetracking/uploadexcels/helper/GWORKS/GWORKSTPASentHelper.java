@@ -1,4 +1,4 @@
-package com.royal.filetracking.uploadexcels.helper;
+package com.royal.filetracking.uploadexcels.helper.GWORKS;
 
 import java.io.IOException;
 import java.io.InputStream;import java.lang.reflect.Executable;
@@ -14,8 +14,9 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.boot.context.properties.source.MutuallyExclusiveConfigurationPropertiesException;
 
-import com.royal.filetracking.uploadexcels.model.GWORKSTPASent;
-import com.royal.filetracking.uploadexcels.model.GWORKSWoRcvd;
+import com.royal.filetracking.uploadexcels.helper.ExcelHelper;
+import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSTPASent;
+import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSWoRcvd;
 
 public class GWORKSTPASentHelper {
 
