@@ -1,0 +1,21 @@
+<div>
+	<table cellspacing="0" rules="all" border="1">
+		<tr>
+			<th scope="col">Reg. No.</th><th scope="col">Reg. Date.</th><th scope="col">taluka</th><th scope="col">village</th><th scope="col">Not Installed Dt.</th><th scope="col">Farmer Name</th><th scope="col">Inspection Agency</th><th scope="col">MIS System</th><th scope="col">Loanee / Non Loanee</th><th scope="col">Area (Hac)</th><th scope="col">Status</th><th scope="col">System Not Installed Remarks</th><th scope="col">Est. Miscost</th><th scope="col">MisCost Exclusive</th><th scope="col">InspectionChrg</th><th scope="col">type</th><th scope="col">abortremarks</th><th scope="col">Source of Application</th><th scope="col">SEVENYEARCASE</th>
+		</tr><tr>
+			<td>2021-SRT-1060</td><td>08/07/2021</td><td>MANDVI(S)</td><td>TUKED</td><td>01/03/2023</td><td>CHHANIYABHAI LAVJIBHAI - 9726982788</td><td>HERTZ</td><td>Sprinkler</td><td>Non Loanee</td><td>2.000</td><td>Inspection Not Installed</td><td>CANCELLED--SUPPLIER NOT READY FOR INSPECTION</td><td>28527.510</td><td>25260.280</td><td>36.000</td><td>3</td><td>CANCELLED--SUPPLIER NOT READY FOR INSPECTION</td><td>Tribal Dept(Supplier)</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2021-SRT-1060</td><td>08/07/2021</td><td>MANDVI(S)</td><td>TUKED</td><td>01/03/2023</td><td>CHHANIYABHAI LAVJIBHAI - 9726982788</td><td>HERTZ</td><td>Sprinkler</td><td>Non Loanee</td><td>2.000</td><td>Inspection Not Installed</td><td>CANCELLED--SUPPLIER NOT READY FOR INSPECTION</td><td>28527.510</td><td>25260.280</td><td>36.000</td><td>3</td><td>CANCELLED--SUPPLIER NOT READY FOR INSPECTION</td><td>Tribal Dept(Supplier)</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2021-SRT-1060</td><td>08/07/2021</td><td>MANDVI(S)</td><td>TUKED</td><td>01/03/2023</td><td>CHHANIYABHAI LAVJIBHAI - 9726982788</td><td>HERTZ</td><td>Sprinkler</td><td>Non Loanee</td><td>2.000</td><td>Inspection Not Installed</td><td>CANCELLED--SUPPLIER NOT READY FOR INSPECTION</td><td>28527.510</td><td>25260.280</td><td>36.000</td><td>3</td><td>CANCELLED--SUPPLIER NOT READY FOR INSPECTION</td><td>Tribal Dept(Supplier)</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-1617</td><td>26/08/2022</td><td>KHERALU</td><td>KUDA</td><td>29/12/2022</td><td>THAKOR GOVINDJI PARBATJI - 9924267091</td><td>HERTZ</td><td>Sprinkler</td><td>Non Loanee</td><td>0.600</td><td>Inspection Not Installed</td><td>NOTINSTALLED--MATERIAL SUPPLIED BUT NOT INSTALLED AS PER GUIDELINE</td><td>18814.470</td><td>16587.920</td><td>36.000</td><td>2</td><td>NOTINSTALLED--MATERIAL SUPPLIED BUT NOT INSTALLED AS PER GUIDELINE</td><td>GUVNL-Dark Zone-2</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-1617</td><td>26/08/2022</td><td>KHERALU</td><td>KUDA</td><td>29/12/2022</td><td>THAKOR GOVINDJI PARBATJI - 9924267091</td><td>HERTZ</td><td>Sprinkler</td><td>Non Loanee</td><td>0.600</td><td>Inspection Not Installed</td><td>NOTINSTALLED--MATERIAL SUPPLIED BUT NOT INSTALLED AS PER GUIDELINE</td><td>18814.470</td><td>16587.920</td><td>36.000</td><td>2</td><td>NOTINSTALLED--MATERIAL SUPPLIED BUT NOT INSTALLED AS PER GUIDELINE</td><td>GUVNL-Dark Zone-2</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2021-KH-500</td><td>30/11/2020</td><td>KAPADVANJ</td><td>AGHATNA MUVADA</td><td>28/01/2022</td><td>GADHVI MANHARDAS SHANKARDAN - 9714922526</td><td>HERTZ</td><td>Drip</td><td>Non Loanee</td><td>0.590</td><td>Inspection Not Installed</td><td>CANCELLED--SUPPLIER NOT READY FOR INSPECTION</td><td>67176.940</td><td>59780.930</td><td>41.769</td><td>2</td><td>CANCELLED--SUPPLIER NOT READY FOR INSPECTION</td><td>Dark Zone</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2021-KH-500</td><td>30/11/2020</td><td>KAPADVANJ</td><td>AGHATNA MUVADA</td><td>28/01/2022</td><td>GADHVI MANHARDAS SHANKARDAN - 9714922526</td><td>HERTZ</td><td>Drip</td><td>Non Loanee</td><td>0.590</td><td>Inspection Not Installed</td><td>CANCELLED--SUPPLIER NOT READY FOR INSPECTION</td><td>67176.940</td><td>59780.930</td><td>41.769</td><td>3</td><td>CANCELLED--SUPPLIER NOT READY FOR INSPECTION</td><td>Dark Zone</td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div>

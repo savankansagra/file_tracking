@@ -75,6 +75,19 @@ public class GWORKSController {
 		return excelGWORKSService.saveInspectionSent(file);
 	}
 	
+	/**
+	 * Inspection not installed file upload.
+	 * 
+	 * @param file
+	 * @return
+	 */
+	@PostMapping("/insp_not_installed")
+	public ResponseEntity<Map<?, ?>> uploadGWORKSInspNotInstalled(@RequestParam("file") MultipartFile file){
+		logger.info("GWorks Inspection not installed : uploading file...");
+		return excelGWORKSService.saveInspNotInstalled(file);
+	}
+	
+	
 	
 	
 }

@@ -1,0 +1,11 @@
+<div>
+	<table cellspacing="0" rules="all" border="1">
+		<tr>
+			<th scope="col">Reg. No.</th><th scope="col">Reg. Date.</th><th scope="col">District</th><th scope="col">taluka</th><th scope="col">village</th><th scope="col">Insp Date</th><th scope="col">Farmer Name</th><th scope="col">Inspection Agency</th><th scope="col">MIS System</th><th scope="col">Loanee / Non Loanee</th><th scope="col">Area (Hac)</th><th scope="col">Status</th><th scope="col">inspection Date</th><th scope="col">gps</th><th scope="col">TPA DATE</th><th scope="col">Est. Miscost</th><th scope="col">MisCost Exclusive</th><th scope="col">InspectionChrg</th><th scope="col">SOURCENAME</th><th scope="col">SEVENYEARCASE</th>
+		</tr><tr>
+			<td>2223-SK-1536</td><td>18/07/2022</td><td>SABARKANTHA</td><td>TALOD</td><td>SAGPUR</td><td>08/04/2023</td><td>CHAMAR RAMANBHAI KACHARABHAI - 8320952975</td><td>HERTZ</td><td>Drip</td><td>Non Loanee</td><td>0.690</td><td>Inspection Cleared (GPS TRIAL DATE)</td><td>08-Apr-2023 17:11:01</td><td>Y</td><td>02/02/2023</td><td>89337.730</td><td>79440.920</td><td>55.777</td><td>MIS PARTNER (SUPPLIER)</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-ARV-2237</td><td>07/02/2023</td><td>ARVALLI</td><td>DHANSURA</td><td>JASWANTPURA(AMODARA)</td><td>05/04/2023</td><td>PATEL TARUNBHAI PARSOTAMBHAI - 6352580288</td><td>AMIN</td><td>Drip</td><td>Non Loanee</td><td>0.590</td><td>Inspection Cleared (GPS TRIAL DATE)</td><td>05-Apr-2023 21:48:09</td><td>Y</td><td>20/02/2023</td><td>65587.380</td><td>58345.980</td><td>40.691</td><td>Supplier</td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div>
