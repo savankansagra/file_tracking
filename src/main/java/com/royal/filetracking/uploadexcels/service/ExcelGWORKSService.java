@@ -52,8 +52,13 @@ public interface ExcelGWORKSService {
 	 */
 	ResponseEntity<Map<?, ?>> saveInspNotInstalled(MultipartFile file);
 
-	
-	
-	
+	/**
+	 * GWORKS Inspection installed
+	 * Convert Inspection install excel file to DB Object and save
+	 * 
+	 * @param file
+	 * @return
+	 */
+	ResponseEntity<Map<?, ?>> saveInspCleared(MultipartFile file);
 	
 }
