@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.collections4.map.HashedMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -72,7 +71,7 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 	public ResponseEntity<Map<?, ?>> saveGDRSNewRegistration(MultipartFile file) {
 		String message = "";
 		logger.info("Saving GDRS new registration file.");
-		Map<String, String> resp = new HashedMap<>();
+		Map<String, String> resp = new HashMap<>();
 		if(ExcelHelper.hasExcelFormat(file)) {
 			try {
 				// Get List of object from the file.
@@ -135,7 +134,7 @@ public class ExcelGDRSServiceImpl implements ExcelGDRSService {
 	public ResponseEntity<Map<?, ?>> saveGDRSPendingSupplier(MultipartFile file) {
 		String message = "";
 		logger.info("Saving GDRS Pending Supplier file.");
-		Map<String, String> resp = new HashedMap<>();
+		Map<String, String> resp = new HashMap<>();
 		if(ExcelHelper.hasExcelFormat(file)) {
 			try {
 				// Get List of object from the file.
