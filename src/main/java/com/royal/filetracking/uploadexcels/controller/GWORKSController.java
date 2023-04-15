@@ -111,5 +111,16 @@ public class GWORKSController {
 		return excelGWORKSService.saveInvoiceSent(file);
 	}
 	
+	/**
+	 * Final Payment Cleared file upload.
+	 * 
+	 * @param file
+	 * @return
+	 */
+	@PostMapping("/fp_cleared")
+	public ResponseEntity<Map<?, ?>> uploadGWORKSFPCleared(@RequestParam("file") MultipartFile file){
+		logger.info("GWorks Final Payment Cleared : uploading file...");
+		return excelGWORKSService.saveFinalPaymentCleared(file);
+	}
 	
 }

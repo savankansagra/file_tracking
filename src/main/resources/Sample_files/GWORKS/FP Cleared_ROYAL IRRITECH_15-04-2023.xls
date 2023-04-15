@@ -1,0 +1,61 @@
+<div>
+	<table cellspacing="0" rules="all" border="1">
+		<tr>
+			<th scope="col">Reg. No.</th><th scope="col">Reg. Date.</th><th scope="col">taluka</th><th scope="col">village</th><th scope="col">FP Date</th><th scope="col">25% Rel. Dt.</th><th scope="col">Farmer Name</th><th scope="col">Inspection Agency</th><th scope="col">MIS System</th><th scope="col">Loanee / Non Loanee</th><th scope="col">Area (Hac)</th><th scope="col">Status</th><th scope="col">Est. Miscost</th><th scope="col">MisCost Exclusive</th><th scope="col">InspectionChrg</th><th scope="col">Final Amount</th>
+		</tr><tr>
+			<td>2223-SK-1568</td><td>21/02/2023</td><td>TALOD</td><td>SAGPUR</td><td>31/03/2023</td><td>&nbsp;</td><td>PATEL BHARATKUMAR PREMJIBHAI - 8320952975</td><td>AMIN</td><td>Drip</td><td>Non Loanee</td><td>0.420</td><td>Final Payment Cleared</td><td>44993.750</td><td>40028.510</td><td>36.000</td><td>43205.000</td>
+		</tr><tr>
+			<td>2223-SK-1569</td><td>19/02/2023</td><td>TALOD</td><td>SAGPUR</td><td>31/03/2023</td><td>&nbsp;</td><td>PATEL JAGDISHKUMAR PREMJIBHAI - 8320952975</td><td>AMIN</td><td>Drip</td><td>Non Loanee</td><td>0.880</td><td>Final Payment Cleared</td><td>98186.690</td><td>87317.390</td><td>61.256</td><td>95562.000</td>
+		</tr><tr>
+			<td>2223-KH-1108</td><td>07/02/2023</td><td>KAPADVANJ</td><td>SAVALI</td><td>31/03/2023</td><td>02/03/2023</td><td>RAMESHBHAI BABUBHAI BHOI - 7874645493</td><td>IR CLASS</td><td>Sprinkler</td><td>Non Loanee</td><td>0.600</td><td>Final Payment Cleared</td><td>19526.920</td><td>17224.040</td><td>36.000</td><td>19098.000</td>
+		</tr><tr>
+			<td>2223-BK-6053</td><td>25/07/2022</td><td>DHANERA</td><td>JORAPURA (DHAKHA)</td><td>31/03/2023</td><td>&nbsp;</td><td>KANBI MAFABHAI RAMJIBHAI - 9723017423</td><td>IR CLASS</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>1.840</td><td>Final Payment Cleared</td><td>229402.010</td><td>203822.030</td><td>144.164</td><td>224505.000</td>
+		</tr><tr>
+			<td>2223-AMR-1179</td><td>04/08/2022</td><td>BABRA</td><td>NADALA</td><td>31/03/2023</td><td>26/12/2022</td><td>KALKANI ARVINDBHAI DAMJIBHAI - 9510090124</td><td>AMIN</td><td>Sprinkler</td><td>Non Loanee</td><td>1.800</td><td>Final Payment Cleared</td><td>31265.000</td><td>27704.460</td><td>36.000</td><td>30483.000</td>
+		</tr><tr>
+			<td>2223-MSN-2952</td><td>03/02/2023</td><td>UNJHA</td><td>AMUDH</td><td>31/03/2023</td><td>14/03/2023</td><td>THAKOR RAMESHBHAI DHANAJI - 7574903633</td><td>AMIN</td><td>Sprinkler</td><td>Non Loanee</td><td>0.400</td><td>Final Payment Cleared</td><td>15833.570</td><td>13926.400</td><td>36.000</td><td>15442.000</td>
+		</tr><tr>
+			<td>2223-SK-1716</td><td>19/02/2023</td><td>TALOD</td><td>SAGPUR</td><td>31/03/2023</td><td>&nbsp;</td><td>PATEL RAHULKUMAR BHARATBHAI - 8320952975</td><td>AMIN</td><td>Drip</td><td>Non Loanee</td><td>0.350</td><td>Final Payment Cleared</td><td>39375.530</td><td>35015.060</td><td>36.000</td><td>37658.000</td>
+		</tr><tr>
+			<td>2223-KH-1088</td><td>02/02/2023</td><td>KAPADVANJ</td><td>BHUNGALIYA</td><td>31/03/2023</td><td>15/02/2023</td><td>SODHA BHURABHAI TITABHAI - 9099006345</td><td>IR CLASS</td><td>Sprinkler</td><td>Non Loanee</td><td>1.800</td><td>Final Payment Cleared</td><td>32375.260</td><td>28695.770</td><td>36.000</td><td>31818.000</td>
+		</tr><tr>
+			<td>2223-SK-2389</td><td>30/11/2022</td><td>TALOD</td><td>MOHANPUR</td><td>31/03/2023</td><td>&nbsp;</td><td>PATEL VIJAYBHAI RAMESHBHAI - 9427845536</td><td>AMIN</td><td>Drip</td><td>Non Loanee</td><td>1.350</td><td>Final Payment Cleared</td><td>139195.200</td><td>123754.990</td><td>87.012</td><td>135884.000</td>
+		</tr><tr>
+			<td>2223-ARV-1108</td><td>20/09/2022</td><td>MODASA</td><td>FAREDI</td><td>31/03/2023</td><td>&nbsp;</td><td>MEDA BHARATBHAI DAHYAJI - 6354283601</td><td>AMIN</td><td>Drip</td><td>Non Loanee</td><td>0.900</td><td>Final Payment Cleared</td><td>110919.320</td><td>98611.110</td><td>69.367</td><td>107625.000</td>
+		</tr><tr>
+			<td>2223-MSN-3653</td><td>03/03/2023</td><td>UNJHA</td><td>UNAVA</td><td>31/03/2023</td><td>14/03/2023</td><td>PATEL RAMESHBHAI NAROTTAMBHAI - 6352300782</td><td>HERTZ</td><td>Sprinkler</td><td>Non Loanee</td><td>0.600</td><td>Final Payment Cleared</td><td>19526.920</td><td>17224.040</td><td>36.000</td><td>19098.000</td>
+		</tr><tr>
+			<td>2223-MSN-3657</td><td>03/03/2023</td><td>VISNAGAR</td><td>KADA</td><td>31/03/2023</td><td>14/03/2023</td><td>PATEL DWARKABHAI AMBARAMBHAI - 9824250396</td><td>IR CLASS</td><td>Sprinkler</td><td>Non Loanee</td><td>0.400</td><td>Final Payment Cleared</td><td>14043.190</td><td>12327.850</td><td>36.000</td><td>13669.000</td>
+		</tr><tr>
+			<td>2223-MSN-3296</td><td>15/02/2023</td><td>MEHSANA</td><td>PILUDARA</td><td>31/03/2023</td><td>03/03/2023</td><td>PATEL PANKAJKUMAR DAHYALAL - 9925780790</td><td>HERTZ</td><td>Sprinkler</td><td>Non Loanee</td><td>0.600</td><td>Final Payment Cleared</td><td>19526.920</td><td>17224.040</td><td>36.000</td><td>19098.000</td>
+		</tr><tr>
+			<td>2223-MSN-3299</td><td>14/02/2023</td><td>VISNAGAR</td><td>PUDGAM</td><td>31/03/2023</td><td>04/03/2023</td><td>THAKOR CHAMANJI RAMSANGJI - 9726132395</td><td>IR CLASS</td><td>Sprinkler</td><td>Non Loanee</td><td>0.800</td><td>Final Payment Cleared</td><td>23220.280</td><td>20521.680</td><td>36.000</td><td>22754.000</td>
+		</tr><tr>
+			<td>2223-MSN-3297</td><td>14/02/2023</td><td>VISNAGAR</td><td>TARABH</td><td>31/03/2023</td><td>04/03/2023</td><td>SHOMAJI KACHARAJI THAKOR - 7698641028</td><td>AMIN</td><td>Sprinkler</td><td>Non Loanee</td><td>1.000</td><td>Final Payment Cleared</td><td>27629.620</td><td>24458.590</td><td>36.000</td><td>27120.000</td>
+		</tr><tr>
+			<td>2223-MSN-3300</td><td>14/02/2023</td><td>VISNAGAR</td><td>RANDALA</td><td>31/03/2023</td><td>04/03/2023</td><td>CHAUDHARI SHANKARBHAI FULABHAI - 9979402189</td><td>HERTZ</td><td>Sprinkler</td><td>Non Loanee</td><td>1.000</td><td>Final Payment Cleared</td><td>27629.620</td><td>24458.590</td><td>36.000</td><td>27120.000</td>
+		</tr><tr>
+			<td>2223-SK-1533</td><td>19/02/2023</td><td>TALOD</td><td>SAGPUR</td><td>31/03/2023</td><td>&nbsp;</td><td>PATEL JAGDISHKUMAR PREMJIBHAI - 8320952975</td><td>AMIN</td><td>Drip</td><td>Non Loanee</td><td>0.240</td><td>Final Payment Cleared</td><td>30207.110</td><td>26834.220</td><td>36.000</td><td>28605.000</td>
+		</tr><tr>
+			<td>2223-MSN-3080</td><td>30/01/2023</td><td>UNJHA</td><td>DASAJ</td><td>31/03/2023</td><td>09/02/2023</td><td>PATEL JAYESHKUMAR MANILAL MAGANLAL - 9825046205</td><td>IR CLASS</td><td>Sprinkler</td><td>Non Loanee</td><td>0.600</td><td>Final Payment Cleared</td><td>17185.170</td><td>15133.190</td><td>36.000</td><td>16780.000</td>
+		</tr><tr>
+			<td>2223-SK-1534</td><td>19/02/2023</td><td>TALOD</td><td>SAGPUR</td><td>31/03/2023</td><td>&nbsp;</td><td>PATEL PREMJIBHAI JETHABHAI - 8320952975</td><td>AMIN</td><td>Drip</td><td>Non Loanee</td><td>3.040</td><td>Final Payment Cleared</td><td>311957.460</td><td>277215.300</td><td>195.788</td><td>305656.000</td>
+		</tr><tr>
+			<td>2223-MSN-3475</td><td>19/02/2023</td><td>UNJHA</td><td>AITHOR</td><td>31/03/2023</td><td>06/03/2023</td><td>THAKOR VIKRAMJI JOGAJI - 9824671964</td><td>AMIN</td><td>Sprinkler</td><td>Non Loanee</td><td>0.400</td><td>Final Payment Cleared</td><td>14043.190</td><td>12327.850</td><td>36.000</td><td>13669.000</td>
+		</tr><tr>
+			<td>2223-KH-1075</td><td>13/02/2023</td><td>KATHLAL</td><td>DAMPAT</td><td>31/03/2023</td><td>03/03/2023</td><td>BUDHABHAI SOMABHAI - 9998075264</td><td>IR CLASS</td><td>Sprinkler</td><td>Non Loanee</td><td>0.400</td><td>Final Payment Cleared</td><td>15833.570</td><td>13926.400</td><td>36.000</td><td>15442.000</td>
+		</tr><tr>
+			<td>2223-SK-4562</td><td>28/02/2023</td><td>TALOD</td><td>SAGPUR</td><td>31/03/2023</td><td>&nbsp;</td><td>PATEL CHIRAGKUMAR BHARATBHAI - 8320952975</td><td>AMIN</td><td>Drip</td><td>Non Loanee</td><td>0.350</td><td>Final Payment Cleared</td><td>38697.640</td><td>34400.440</td><td>36.000</td><td>36976.000</td>
+		</tr><tr>
+			<td>2223-MSN-3081</td><td>31/01/2023</td><td>VISNAGAR</td><td>UMTA</td><td>31/03/2023</td><td>21/02/2023</td><td>PATEL SHAILESHKUMAR MAFATLAL - 9328152313</td><td>AMIN</td><td>Sprinkler</td><td>Non Loanee</td><td>0.400</td><td>Final Payment Cleared</td><td>14043.190</td><td>12327.850</td><td>36.000</td><td>13669.000</td>
+		</tr><tr>
+			<td>2223-MSN-3217</td><td>06/02/2023</td><td>VISNAGAR</td><td>TARABH</td><td>31/03/2023</td><td>21/02/2023</td><td>CHAUDHARI PRAVINBHAI DALSANGBHAI - 9925574254</td><td>IR CLASS</td><td>Sprinkler</td><td>Non Loanee</td><td>0.400</td><td>Final Payment Cleared</td><td>15833.570</td><td>13926.400</td><td>36.000</td><td>15442.000</td>
+		</tr><tr>
+			<td>2223-MSN-3216</td><td>06/02/2023</td><td>VISNAGAR</td><td>KHANDOSAN</td><td>31/03/2023</td><td>21/02/2023</td><td>CHAUDHARI PARESH MANUBHAI - 9723168178</td><td>HERTZ</td><td>Sprinkler</td><td>Non Loanee</td><td>0.600</td><td>Final Payment Cleared</td><td>19526.920</td><td>17224.040</td><td>36.000</td><td>19098.000</td>
+		</tr><tr>
+			<td>2223-MSN-3353</td><td>16/02/2023</td><td>VISNAGAR</td><td>TARABH</td><td>31/03/2023</td><td>03/03/2023</td><td>THAKOR NAGJIJI KACHARAJI - 9737871296</td><td>AMIN</td><td>Sprinkler</td><td>Non Loanee</td><td>0.400</td><td>Final Payment Cleared</td><td>15833.570</td><td>13926.400</td><td>36.000</td><td>15442.000</td>
+		</tr><tr>
+			<td>2223-MSN-3348</td><td>14/02/2023</td><td>VISNAGAR</td><td>VISNAGAR (RURAL)</td><td>31/03/2023</td><td>04/03/2023</td><td>THAKOR CHHABAJI MANAJI - 8320202518</td><td>IR CLASS</td><td>Sprinkler</td><td>Non Loanee</td><td>0.400</td><td>Final Payment Cleared</td><td>15833.570</td><td>13926.400</td><td>36.000</td><td>15442.000</td>
+		</tr>
+	</table>
+</div>

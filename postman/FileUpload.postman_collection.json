@@ -385,6 +385,38 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "GWORKS_Final_Payment_cleared_file_upload",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GWORKS/FP Cleared_ROYAL IRRITECH_15-04-2023.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v3/gworks/fp_cleared",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v3",
+										"gworks",
+										"fp_cleared"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				},

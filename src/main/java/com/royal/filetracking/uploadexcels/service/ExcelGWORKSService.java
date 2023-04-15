@@ -69,5 +69,14 @@ public interface ExcelGWORKSService {
 	 * @return
 	 */
 	ResponseEntity<Map<?, ?>> saveInvoiceSent(MultipartFile file);
+
+	/**
+	 * GWORKS Final Payment Cleared
+	 * Convert Final Payment Cleared excel file to DB Object and save
+	 * 
+	 * @param file
+	 * @return
+	 */
+	ResponseEntity<Map<?, ?>> saveFinalPaymentCleared(MultipartFile file);
 	
 }

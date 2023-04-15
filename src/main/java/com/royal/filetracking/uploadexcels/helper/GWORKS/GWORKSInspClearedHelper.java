@@ -146,5 +146,4 @@ public class GWORKSInspClearedHelper {
 		return gworksInspClrd;
 	}
 
-	
 }

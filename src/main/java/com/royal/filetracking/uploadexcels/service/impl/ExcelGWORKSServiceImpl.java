@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.royal.filetracking.uploadexcels.helper.ExcelHelper;
+import com.royal.filetracking.uploadexcels.helper.GWORKS.GWORKSFinalPaymentClearedHelper;
 import com.royal.filetracking.uploadexcels.helper.GWORKS.GWORKSInspClearedHelper;
 import com.royal.filetracking.uploadexcels.helper.GWORKS.GWORKSInspNotInstalledHelper;
 import com.royal.filetracking.uploadexcels.helper.GWORKS.GWORKSInspSentHelper;
@@ -21,6 +22,7 @@ import com.royal.filetracking.uploadexcels.helper.GWORKS.GWORKSInvoiceSentHelper
 import com.royal.filetracking.uploadexcels.helper.GWORKS.GWORKSTPAClearedHelper;
 import com.royal.filetracking.uploadexcels.helper.GWORKS.GWORKSTPASentHelper;
 import com.royal.filetracking.uploadexcels.helper.GWORKS.GWORKSWoRcvdHelper;
+import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSFPCleared;
 import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSInspClrd;
 import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSInspNotInstalled;
 import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSInspSent;
@@ -28,6 +30,7 @@ import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSInvoiceSent;
 import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSTPACleared;
 import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSTPASent;
 import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSWoRcvd;
+import com.royal.filetracking.uploadexcels.repository.GWORKS.GWORKSFinalPaymentClearedRepository;
 import com.royal.filetracking.uploadexcels.repository.GWORKS.GWORKSInspClrdRepository;
 import com.royal.filetracking.uploadexcels.repository.GWORKS.GWORKSInspNotInstalledRepository;
 import com.royal.filetracking.uploadexcels.repository.GWORKS.GWORKSInspSentRepository;
@@ -61,6 +64,8 @@ public class ExcelGWORKSServiceImpl implements ExcelGWORKSService {
 	@Autowired
 	GWORKSInvoiceSentRepository	gworksInvoiceSentRepository;
 	
+	@Autowired
+	GWORKSFinalPaymentClearedRepository	gworksFinalPaymentClearedRepository;
 	
 	
 	public final Logger logger = LoggerFactory.getLogger(ExcelGWORKSServiceImpl.class);
@@ -484,4 +489,61 @@ public class ExcelGWORKSServiceImpl implements ExcelGWORKSService {
 	private List<GWORKSInvoiceSent> saveInvoiceSentToDb(List<GWORKSInvoiceSent> invoiceSentList) {
 		return gworksInvoiceSentRepository.saveAll(invoiceSentList);
 	}
+
+
+	@Override
+	public ResponseEntity<Map<?, ?>> saveFinalPaymentCleared(MultipartFile file) {
+		String message = "";
+		logger.info("Saving Final Payment Cleared file");
+		Map<String, String> resp = new HashMap<>();
+		if(ExcelHelper.hasExcelFormat(file)) {
+			try {
+				// Get list of object from the file.
+				List<GWORKSFPCleared> finalPaymentClearedList = this.GWORKSFinalPaymentClearedConvertToList(file);
+				if(finalPaymentClearedList.isEmpty()) {
+					message="error while parsing the Final Payment cleared excel file";
+					logger.info(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED)
+							.body(resp);
+				}
+				
+				// Save list to database
+				// TODO - start
+				List<GWORKSFPCleared> savedFinalPaymentClearedList = this.saveFinalPaymentClearedToDb(finalPaymentClearedList);
+				if(savedFinalPaymentClearedList.isEmpty()) {
+					message = "Error while saving the final payment cleared to database.";
+					logger.info(message);
+					resp.put("message", message);
+					return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
+				}
+				message = "GWORKS Final Payment Cleared file uploaded succesfully.";
+				logger.info(message);
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.CREATED).body(resp);
+				
+			} catch (IOException e) {
+				message = "Could not process the file.";
+				logger.info(message);
+				resp.put("message", message);
+				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+						.body(resp);
+			}
+		}
+		
+		// if file format is not excel.
+		message = "please upload an excel file!";
+		resp.put("message", message);
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(resp);
+
+	}
+
+	private List<GWORKSFPCleared> GWORKSFinalPaymentClearedConvertToList(MultipartFile file) throws IOException {
+		return GWORKSFinalPaymentClearedHelper.excelToGWORKSInspSent(file.getInputStream());
+	}
+	
+	private List<GWORKSFPCleared> saveFinalPaymentClearedToDb(List<GWORKSFPCleared> finalPaymentClearedList) {
+		return gworksFinalPaymentClearedRepository.saveAll(finalPaymentClearedList);
+	}
+
 }
