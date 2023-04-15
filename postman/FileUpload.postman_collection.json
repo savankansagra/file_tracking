@@ -237,7 +237,7 @@
 										{
 											"key": "file",
 											"type": "file",
-											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GWORKS/TPA Sent_ROYAL IRRITECH_07-04-2023.xlsx"
+											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GWORKS/TPA Cleared_ROYAL IRRITECH_11-04-2023.xlsx"
 										}
 									]
 								},
@@ -253,6 +253,134 @@
 										"v3",
 										"gworks",
 										"tpa_cleared"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GWORKS_Inspection_sent_file_upload",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GWORKS/Insp. Sent_ROYAL IRRITECH_11-04-2023.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v3/gworks/insp_sent",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v3",
+										"gworks",
+										"insp_sent"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GWORKS_Inspection_not_installed_file_upload",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GWORKS/Insp. Not Installed_ROYAL IRRITECH_12-04-2023.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v3/gworks/insp_not_installed",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v3",
+										"gworks",
+										"insp_not_installed"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GWORKS_Inspection_cleared_file_upload",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GWORKS/Insp. Clrd._ROYAL IRRITECH_14-04-2023.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v3/gworks/insp_cleared",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v3",
+										"gworks",
+										"insp_cleared"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GWORKS_Invoice_Sent_file_upload",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/savan/code/java/royal_ggrc/file_traking_portal_code/filetracking/src/main/resources/Sample_files/GWORKS/Invoice Sent_ROYAL IRRITECH_14-04-2023.xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v3/gworks/invoice_sent",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v3",
+										"gworks",
+										"invoice_sent"
 									]
 								}
 							},

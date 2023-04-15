@@ -1,0 +1,13 @@
+<div>
+	<table cellspacing="0" rules="all" border="1">
+		<tr>
+			<th scope="col">Reg. No.</th><th scope="col">Reg. Date.</th><th scope="col">taluka</th><th scope="col">village</th><th scope="col">Inv Sent DT</th><th scope="col">25% Rel. Dt.</th><th scope="col">Farmer Name</th><th scope="col">MIS System</th><th scope="col">Loanee / Non Loanee</th><th scope="col">Area (Hac)</th><th scope="col">Status</th><th scope="col">gps</th><th scope="col">inspection Date</th><th scope="col">Est. Miscost</th><th scope="col">FP inward date</th><th scope="col">Invoice Physical verification Dt</th><th scope="col">TR VERIFIED DT</th>
+		</tr><tr>
+			<td>2223-SK-1536</td><td>18/07/2022</td><td>TALOD</td><td>SAGPUR</td><td>14/04/2023</td><td>&nbsp;</td><td>CHAMAR RAMANBHAI KACHARABHAI - 8320952975</td><td>Drip</td><td>Non Loanee</td><td>0.690</td><td>Bill Sent (GPS TRIAL DATE)</td><td>Y</td><td>08/04/2023</td><td>89337.730</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-SK-4152</td><td>17/02/2023</td><td>TALOD</td><td>NANA CHEKHLA</td><td>12/04/2023</td><td>&nbsp;</td><td>PATEL BAHECHARBHAI RAMABHAI - 9428774132</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.740</td><td>Bill Sent (GPS TRIAL DATE)</td><td>Y</td><td>08/04/2023</td><td>71957.800</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2223-MSN-2252</td><td>22/11/2022</td><td>KHERALU</td><td>ARATHI</td><td>20/02/2023</td><td>&nbsp;</td><td>CHAUDHARI ABHERAJBHAI JASABHAI - 9558842484</td><td>Mini Sprinkler</td><td>Non Loanee</td><td>0.280</td><td>Bill Sent (GPS TRIAL DATE)</td><td>Y</td><td>16/02/2023</td><td>43903.140</td><td>20/02/2023</td><td>20/02/2023</td><td>23/02/2023</td>
+		</tr>
+	</table>
+</div>

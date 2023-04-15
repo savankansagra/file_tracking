@@ -99,5 +99,17 @@ public class GWORKSController {
 		return excelGWORKSService.saveInspCleared(file);
 	}
 	
+	/**
+	 * Invoice Sent file upload.
+	 * 
+	 * @param file
+	 * @return
+	 */
+	@PostMapping("/invoice_sent")
+	public ResponseEntity<Map<?, ?>> uploadGWORKSInvoiceSent(@RequestParam("file") MultipartFile file){
+		logger.info("GWorks Invoice Sent : uploading file...");
+		return excelGWORKSService.saveInvoiceSent(file);
+	}
+	
 	
 }

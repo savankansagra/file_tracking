@@ -18,6 +18,7 @@ import com.royal.filetracking.uploadexcels.helper.ExcelHelper;
 import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSInspClrd;
 import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSInspNotInstalled;
 import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSInspSent;
+import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSInvoiceSent;
 import com.royal.filetracking.uploadexcels.model.GWORKS.GWORKSWoRcvd;
 
 public class GWORKSInspClearedHelper {
