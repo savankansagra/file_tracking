@@ -35,7 +35,20 @@ public class GSPRINKController {
 	@PostMapping("/pending_sup")
 	public ResponseEntity<Map<?, ?>> uploadGSPRINKPendingSupplier(@RequestParam("file") MultipartFile file){
 		logger.info("GSPRINK Pending Supplier : uploading file... ");
-		return excelGSPRINGService.saveGDRSPendingSupplier(file);
+		return excelGSPRINGService.saveGSPRINKPendingSupplier(file);
+	}
+	
+	
+	/**
+	 * GSPRINK Registration C & D Pending file upload.
+	 * 
+	 * @Param file
+	 * @return
+	 */
+	@PostMapping("/registration_c_and_c_pending")
+	public ResponseEntity<Map<?, ?>> uploadGSPRINKRegistrationCDPending(@RequestParam("file") MultipartFile file){
+		logger.info("GSPRINK Registration C and D Pending : uploading file... ");
+		return excelGSPRINGService.saveGSPRINKRegistrationCDPending(file);
 	}
 	
 }

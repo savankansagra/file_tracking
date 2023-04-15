@@ -14,6 +14,15 @@ public interface ExcelGSPRINKService {
 	 * @param file
 	 * @return
 	 */
-	ResponseEntity<Map<?, ?>> saveGDRSPendingSupplier(MultipartFile file);
+	ResponseEntity<Map<?, ?>> saveGSPRINKPendingSupplier(MultipartFile file);
+
+	/**
+	 * GSPRINK Registration C and D Pending
+	 * Convert Registration C and D Pending excel file to DB Object and save
+	 * 
+	 * @param file
+	 * @return
+	 */
+	ResponseEntity<Map<?, ?>> saveGSPRINKRegistrationCDPending(MultipartFile file);
 
 }
